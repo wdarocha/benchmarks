@@ -5,6 +5,7 @@ run.pid
 run_parallel.pid
 command.txt
 output.txt
+results.txt
 .generated_files_stamp
 .main_exec_path
 
