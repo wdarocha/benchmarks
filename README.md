@@ -26,7 +26,7 @@ Instructions specific to each benchmark are included in the corresponding folder
 
 ---
 
-## 📄 License
+## 📜 License
 
 This repository is licensed under the [MIT License](./LICENSE).  
 © 2025 Wagner Alan Aparecido da Rocha
