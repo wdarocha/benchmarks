@@ -1,6 +1,6 @@
 CPU time = 3.00000000
-Last embedded vertex = 89/127
-Number of embedded vertices = 3073991
+Last embedded vertex = 82/127
+Number of embedded vertices = 1473296
 Number of solutions found = 0
 Number of considered solutions = 0
 maximum MDE = ---

@@ -5,11 +5,12 @@ run.pid
 run_parallel.pid
 command.txt
 output.txt
+.generated_files_stamp
+.main_exec_path
 
 # Generated scripts
 create_input_files.sh
 create_run_commands.sh
-get_data.sh
 run_parallel.sh
 
 # Build system
