@@ -3,7 +3,6 @@
 dir='results'
 sampleSize=('5' '13')
 methods=('ibp' 'iabp' 'itbp')
-orders=('ddgpHCorder9')
 pdbIDs=($(cat pdb_ids.txt))
 
 for ((i = 0; i < ${#sampleSize[@]}; i++)); do
@@ -17,7 +16,7 @@ for ((i = 0; i < ${#sampleSize[@]}; i++)); do
 		printf "PDB id & l.e.v. & CPU time & n.o.e.v. & n.o.f.s. & n.o.c.s. & maxMDE & maxLDE & minRMSD \\\\\\\\ \n"
 		
 		for ((k = 0; k < ${#pdbIDs[@]}; k++)); do
-			dirname="$dir/sample_size=${sampleSize[i]}/${methods[j]}/${pdbIDs[k]}/$orders"
+			dirname="$dir/sample_size=${sampleSize[i]}/${methods[j]}/${pdbIDs[k]}"
 			fname="$dirname/results.txt"
 			
 			cpu=

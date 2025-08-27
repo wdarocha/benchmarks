@@ -13,6 +13,7 @@ results.txt
 create_input_files.sh
 create_run_commands.sh
 run_parallel.sh
+collect_data.sh
 
 # Build system
 Makefile

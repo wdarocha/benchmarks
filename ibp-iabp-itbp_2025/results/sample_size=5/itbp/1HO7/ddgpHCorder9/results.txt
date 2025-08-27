@@ -1,8 +1,0 @@
-CPU time = 3.00004200
-Last embedded vertex = 102/102
-Number of embedded vertices = 166293
-Number of solutions found = 22822
-Number of considered solutions = 2
-maximum MDE = 0.00000834
-maximum LDE = 0.02834664
-minimum RMSD = 1.08183667
