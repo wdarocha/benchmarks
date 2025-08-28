@@ -18,18 +18,40 @@ This folder contains the benchmark datasets and results associated with the arti
 
 ## ▶️ Usage
 
-To run the benchmarks, execute the program with:
+Run the benchmarks by executing the `main` binary over your input files.
+The algorithms (iBP, iABP, iTBP) are implemented in
+[BP_Algorithms_for_iDDGP](https://github.com/wdarocha/BP_Algorithms_for_iDDGP).
+
+### Command
 
 ```bash
 ./build/bin/main <input_file> <output_folder>
 ```
 
-Example:
+**Arguments**
+
+* `<input_file>`: path to a single formatted input file (see the main repo for the spec).
+* `<output_folder>`: directory where results and logs will be written (created if missing).
+
+### Single-file example
 
 ```bash
 ./build/bin/main dataset/1TOS_input_file.txt results/
 ```
-Additional details on compilation and input file preparation are documented in the main repository:   
+
+### Batch over a folder (bash loop)
+
+Process every `*_input_file.txt` in `dataset/`:
+
+```bash
+for f in dataset/*_input_file.txt; do
+	./build/bin/main "$f" results/
+done
+```
+
+### Build & input preparation
+
+Compilation instructions and the exact input-file format are documented in the main repository:
 [BP_Algorithms_for_iDDGP](https://github.com/wdarocha/BP_Algorithms_for_iDDGP)
 
 ---
