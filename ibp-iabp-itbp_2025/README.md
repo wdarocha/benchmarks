@@ -42,22 +42,16 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 $$
 \mathrm{MDE}(G,X)=\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}
-\max\!\bigl\{0,\ \underline{d}_{i,j}-\lVert x_i-x_j\rVert,\ \lVert x_i-x_j\rVert-\overline{d}_{i,j}\bigr\}.
+\max\left\{\,0,\ \underline{d}_{i,j}-\|x_i-x_j\|,\ \|x_i-x_j\|-\overline{d}_{i,j}\,\right\}.
 $$
 
 **LDE (Largest Distance Error)** -- maximum violation of distance bounds
 
-$$
-\mathrm{LDE}(G,X)=
-\max_{\{v_i,v_j\}\in E}
-\max\bigl\{0,\ \underline{d}_{i,j}-\lVert x_i-x_j\rVert,\ \lVert x_i-x_j\rVert-\overline{d}_{i,j}\bigr\}.
-$$
+
 
 **RMSD (Root-Mean-Square Deviation)** — deviation of embedding $$X$$ from reference $$X^*$$
 
-$$
-\mathrm{RMSD}(X,X^*)=\frac{1}{\sqrt{n}}\min_{Q\in O(3)} \lVert X^* - XQ\rVert_F
-$$
+
 
 where $$\lVert\cdot\rVert_F$$ is the Frobenius norm and $$O(3)$$ is the orthogonal group.
 
