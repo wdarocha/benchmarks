@@ -41,7 +41,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 **MDE (Mean Distance Error)** — average violation of distance bounds
 
 MDE$$
-(G,X)=\frac{1}{|E|}\sum.
+(G,X) = \frac{1}{|E|}
 $$
 
 **LDE (Largest Distance Error)** — maximum violation of distance bounds
