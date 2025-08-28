@@ -58,14 +58,6 @@ Compilation instructions and the exact input-file format are documented in the m
 
 ## 📊 Results
 
-The following tables present the benchmark results for **iBP**, **iABP**, and **iTBP** under different sampling sizes. They include key performance indicators such as the last embedded vertex (**l.e.v.**), CPU time, number of embedded vertices (**n.o.e.v.**), number of solutions found (**n.o.s.f.**), number of considered solutions (**n.o.c.s.**), and structural quality measures:
-
-- **MDE (Mean Distance Error)** — average violation of distance bounds
-
-- **LDE (Largest Distance Error)** — maximum violation of distance bounds
-
-- **RMSD (Root-Mean-Square Deviation)** -- deviation of the computed embedding from reference structure
-
 The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($$N_{\text{aa}}$$) they contain. The set $$E_0$$ corresponds to edges associated with exact distance constraints, while $$E_I$$ corresponds to edges associated with interval distance constraints. The subset $$E_H \subset E_I \subset E$$ denotes the edges in $$G$$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
 
 | PDB id | N<sub>aa</sub> | \|V\| | \|E₀\| | \|Eᵢ\| | \|E<sub>H</sub>\| 
@@ -95,6 +87,14 @@ The protein dataset used in these experiments is summarized in the following tab
 All algorithms were implemented in C and compiled with **GCC 13.3.0** using the `-O3` optimization flag. The experiments were carried out on a system equipped with an **Intel Xeon Silver 4114 CPU** (10 cores, 20 threads, max frequency 3.0 GHz) and **156 GB of RAM**, running **Ubuntu 24.04.3 LTS**.  
 
 Each instance was executed in **single-thread mode**, with up to seven instances running in parallel. The **CPU time limit** for each run was set to **12 hours**.  
+
+The following tables present the benchmark results for **iBP**, **iABP**, and **iTBP** under different sampling sizes. They include key performance indicators such as the last embedded vertex (**l.e.v.**), CPU time, number of embedded vertices (**n.o.e.v.**), number of solutions found (**n.o.s.f.**), number of considered solutions (**n.o.c.s.**), and structural quality measures:
+
+- **MDE (Mean Distance Error)** — average violation of distance bounds
+
+- **LDE (Largest Distance Error)** — maximum violation of distance bounds
+
+- **RMSD (Root-Mean-Square Deviation)** -- deviation of the computed embedding from reference structure
   
 <!-- RESULTS START -->
 ## Sample Size = 5
