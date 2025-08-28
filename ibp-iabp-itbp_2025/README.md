@@ -38,14 +38,27 @@ Additional details on compilation and input file preparation are documented in t
 
 The following tables present the benchmark results for **iBP**, **iABP**, and **iTBP** under different sampling sizes. They include key performance indicators such as the last embedded vertex (**l.e.v.**), CPU time, number of embedded vertices (**n.o.e.v.**), number of solutions found (**n.o.s.f.**), number of considered solutions (**n.o.c.s.**), and structural quality measures:
 
-**MDE (Mean Distance Error)** -- average violation of distance bounds
+**MDE (Mean Distance Error)** -- average violation of distance bounds: 
+
+$$
+\mathrm{MDE}(G,X)=\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}
+\max\left\{\,0,\ \underline{d}_{i,j}-\|x_i-x_j\|,\ \|x_i-x_j\|-\overline{d}\,\right\}.
+$$
+
+**LDE (Largest Distance Error)** -- maximum violation of distance bounds
+
+
+
+**RMSD (Root-Mean-Square Deviation)** — deviation of embedding $$X$$ from reference $$X^*$$
+
+**MDE (Mean Distance Error)** — average violation of distance bounds
 
 $$
 \mathrm{MDE}(G,X)=\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}
 \max\left\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}_{i,j}\,\right\}.
 $$
 
-**LDE (Largest Distance Error)** -- maximum violation of distance bounds
+**LDE (Largest Distance Error)** — maximum violation of distance bounds
 
 $$
 \mathrm{LDE}(G,X)=
@@ -53,14 +66,13 @@ $$
 \max\left\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}_{i,j}\,\right\}.
 $$
 
-**RMSD (Root-Mean-Square Deviation)** -- deviation of embedding \(X\) from reference \(X^\*\)
+**RMSD (Root-Mean-Square Deviation)** -- deviation of embedding $$X$$ from reference $$X^*$$
 
 $$
-\mathrm{RMSD}(X,X^\*)=\frac{1}{\sqrt{n}}\min_{Q\in O(3)} \left\|X^\* - XQ\right\|_F
+\mathrm{RMSD}(X,X^\*)=\frac{1}{\sqrt{n}}\min_{Q \in O(3)} \lVert X^* - XQ \rVert_F
 $$
 
 where $$\lVert\cdot\rVert_F$$ is the Frobenius norm and $$O(3)$$ is the orthogonal group.
-
 
 The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($$N_{\text{aa}}$$) they contain. The set $$E_0$$ corresponds to edges associated with exact distance constraints, while $$E_I$$ corresponds to edges associated with interval distance constraints. The subset $$E_H \subset E_I \subset E$$ denotes the edges in $$G$$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
 
