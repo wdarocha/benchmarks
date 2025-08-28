@@ -40,11 +40,11 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 - **MDE (Mean Distance Error)**: average violation of distance bounds  
   
-  $$\text{MDE}(G,X) = \frac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \max\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\}$$  
+  MDE$$(G,X) = \frac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \max\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\}$$  
 
 - **LDE (Largest Distance Error)**: maximum violation of distance bounds  
   
-  $$\text{LDE}(G,X) = \max_{\{v_i,v_j\} \in E} \max\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\}$$  
+  LDE$$(G,X) = \max_{\{v_i,v_j\} \in E} \max\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\}$$  
   
 - **RMSD (Root-Mean-Square Deviation)**: structural deviation of an embedding $$X$$ from a reference structure $$X^*$$  
   
