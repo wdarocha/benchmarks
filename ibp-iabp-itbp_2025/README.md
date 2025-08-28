@@ -42,7 +42,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 $$
 \mathrm{MDE}(G,X)=\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}
-\max\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}_{i,j}\,\}.
+\max\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}{i,j}\,\}.
 $$
 
 **LDE (Largest Distance Error)** — maximum violation of distance bounds
@@ -50,7 +50,7 @@ $$
 $$
 \mathrm{LDE}(G,X)=
 \max_{\{v_i,v_j\}\in E}
-\max\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}_{i,j}\,\}.
+\max\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}{i,j}\,\}.
 $$
 
 **RMSD (Root-Mean-Square Deviation)** -- deviation of embedding $$X$$ from reference $$X^*$$
