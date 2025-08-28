@@ -38,6 +38,13 @@ Additional details on compilation and input file preparation are documented in t
 
 The following tables present the benchmark results for **iBP**, **iABP**, and **iTBP** under different sampling sizes. They include key performance indicators such as the last embedded vertex (**l.e.v.**), CPU time, number of embedded vertices (**n.o.e.v.**), number of solutions found (**n.o.s.f.**), number of considered solutions (**n.o.c.s.**), and structural quality measures:
 
+**DE (Distance Error)** — violation of distance bounds
+
+$$
+\mathrm{DE}(v_i,v_j,\mathbf{d}_{i,j}) = 
+\max(0,\ \underline{d}_{i,j} - \lVert x_i - x_j \rVert,\ \lVert x_i - x_j \rVert - \overline{d}{i,j}).
+$$
+
 **MDE (Mean Distance Error)** — average violation of distance bounds
 
 $$
