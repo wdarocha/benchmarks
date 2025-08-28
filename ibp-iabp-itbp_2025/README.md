@@ -42,7 +42,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 $$
 \mathrm{MDE}(G,X)=\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}
-\max\left\{\,0,\ \underline{d}_{i,j}-\|x_i-x_j\|,\ \|x_i-x_j\|-\overline{d}_{i,j}\,\right\}.
+\max\left\{\,0,\ \underline{d}_{i,j}-\|x_i-x_j\|,\ \|x_i-x_j\|-\overline{d}\,\right\}.
 $$
 
 **LDE (Largest Distance Error)** -- maximum violation of distance bounds
