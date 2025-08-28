@@ -41,7 +41,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 **DE (Distance Error)** — violation of distance bounds
 
 $$
-\mathrm{DE}(v_i,v_j,\mathbf{d}_{i,j}) = 
+\mathrm{DE}(v_i, v_j, \underline{d}{i,j}, \overline{d}{i,j}) = 
 \max(0,\ \underline{d}_{i,j} - \lVert x_i - x_j \rVert,\ \lVert x_i - x_j \rVert - \overline{d}{i,j}).
 $$
 
