@@ -38,28 +38,19 @@ Additional details on compilation and input file preparation are documented in t
 
 The following tables present the benchmark results for **iBP**, **iABP**, and **iTBP** under different sampling sizes. They include key performance indicators such as the last embedded vertex (**l.e.v.**), CPU time, number of embedded vertices (**n.o.e.v.**), number of solutions found (**n.o.s.f.**), number of considered solutions (**n.o.c.s.**), and structural quality measures:
 
+<!-- Fallback: SVG-rendered formulas (works even if GitHub KaTeX is not available) -->
 - **MDE (Mean Distance Error)**: average violation of distance bounds
 
-  $$
-  \mathrm{MDE}(G,X)\;=\;\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}
-  \max\!\Bigl\{0,\ \underline{d}_{i,j}-\lVert x_i-x_j\rVert,\ \lVert x_i-x_j\rVert-\overline{d}_{i,j}\Bigr\}.
-  $$
+    <img src="https://render.githubusercontent.com/render/math?math=%5Cmathrm%7BMDE%7D%28G%2CX%29%3D%5Cfrac%7B1%7D%7B%7CE%7C%7D%5Csum_%7B%5C%7Bv_i%2Cv_j%5C%7D%5Cin%20E%7D%5Cmax%5C%7B0%2C%5C%20%5Cunderline%7Bd%7D_%7Bi%2Cj%7D-%5ClVert%20x_i-x_j%5CrVert%2C%5C%20%5ClVert%20x_i-x_j%5CrVert-%5Coverline%7Bd%7D_%7Bi%2Cj%7D%5C%7D." alt="\mathrm{MDE}(G,X)=\frac{1}{|E|}\sum_{\{v_i,v_j\}\in E}\max\{0,\ \underline{d}_{i,j}-\lVert x_i-x_j\rVert,\ \lVert x_i-x_j\rVert-\overline{d}_{i,j}\}.">
 
 - **LDE (Largest Distance Error)**: maximum violation of distance bounds
 
-  $$
-  \mathrm{LDE}(G,X)\;=\;
-  \max_{\{v_i,v_j\}\in E}
-  \max\!\Bigl\{0,\ \underline{d}_{i,j}-\lVert x_i-x_j\rVert,\ \lVert x_i-x_j\rVert-\overline{d}_{i,j}\Bigr\}.
-  $$
+    <img src="https://render.githubusercontent.com/render/math?math=%5Cmathrm%7BLDE%7D%28G%2CX%29%3D%5Cmax_%7B%5C%7Bv_i%2Cv_j%5C%7D%5Cin%20E%7D%5Cmax%5C%7B0%2C%5C%20%5Cunderline%7Bd%7D_%7Bi%2Cj%7D-%5ClVert%20x_i-x_j%5CrVert%2C%5C%20%5ClVert%20x_i-x_j%5CrVert-%5Coverline%7Bd%7D_%7Bi%2Cj%7D%5C%7D." alt="\mathrm{LDE}(G,X)=\max_{\{v_i,v_j\}\in E}\max\{0,\ \underline{d}_{i,j}-\lVert x_i-x_j\rVert,\ \lVert x_i-x_j\rVert-\overline{d}_{i,j}\}.">
 
-- **RMSD (Root-Mean-Square Deviation)**: structural deviation of an embedding \(X\) from a reference structure \(X^*\)
+- **RMSD (Root-Mean-Square Deviation)**: structural deviation of an embedding $X$ from a reference structure $X^*$
 
-  $$
-  \mathrm{RMSD}(X,X^*)\;=\;\frac{1}{\sqrt{n}}\,
-  \min_{Q\in O(3)} \lVert X^* - XQ\rVert_F
-  $$
-  where \(\lVert\cdot\rVert_F\) is the Frobenius norm and \(O(3)\) is the orthogonal group.
+    <img src="https://render.githubusercontent.com/render/math?math=%5Cmathrm%7BRMSD%7D%28X%2CX%5E%2A%29%3D%5Cfrac%7B1%7D%7B%5Csqrt%7Bn%7D%7D%5Cmin_%7BQ%5Cin%20O%283%29%7D%20%5ClVert%20X%5E%2A%20-%20XQ%5CrVert_F" alt="\mathrm{RMSD}(X,X^*)=\frac{1}{\sqrt{n}}\min_{Q\in O(3)} \lVert X^* - XQ\rVert_F">
+    where $\lVert\cdot\rVert_F$ is the Frobenius norm and $O(3)$ is the orthogonal group.
 
 The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues (\(N_{\text{aa}}\)) they contain. The set \(E_0\) corresponds to edges associated with exact distance constraints, while \(E_I\) corresponds to edges associated with interval distance constraints. The subset \(E_H \subset E_I \subset E\) denotes the edges in \(G\) whose weights correspond to interval distances between hydrogen atoms, with both bounds defined, in contrast to van der Waals distances, which only admit a lower bound.  
 
