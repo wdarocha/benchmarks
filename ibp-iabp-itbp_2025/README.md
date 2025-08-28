@@ -11,24 +11,70 @@ This folder contains the benchmark datasets and results associated with the arti
 ## 📂 Contents
 
 - **Input files** used for the iBP, iABP, and iTBP experiments.  
-- **Result files** including solution sets, metrics, and logs.  
-- **Scripts** to reproduce and validate benchmark runs.  
+- **Result files** including solution sets and metrics.  
+- **Scripts** to validate benchmark runs.  
 
 ---
 
 ## ▶️ Usage
 
-Instructions specific to these benchmarks are included in this folder.  
-They describe how to run the tests with the code available at:  
+To run the benchmarks, execute the program with:
+
+```bash
+./build/bin/main <input_file> <output_folder>
+```
+
+Example:
+
+```bash
+./build/bin/main dataset/1TOS_input_file.txt results/
+```
+Additional details on compilation and input file preparation are documented in the main repository:   
 [BP_Algorithms_for_iDDGP](https://github.com/wdarocha/BP_Algorithms_for_iDDGP)
 
 ---
 
 ## 📊 Results
 
-The following tables summarize the benchmark results obtained for **iBP**, **iABP**, and **iTBP** under different sampling sizes.  
-They include key metrics such as the last embedded vertex (l.e.v.), CPU time, number of embedded vertices (n.o.e.v.), number of solutions found (n.o.f.s.), number of considered solutions (n.o.c.s.), and structural quality measures (MDE, LDE, RMSD).  
+The following tables present the benchmark results for **iBP**, **iABP**, and **iTBP** under different sampling sizes. They include key performance indicators such as the last embedded vertex (**l.e.v.**), CPU time, number of embedded vertices (**n.o.e.v.**), number of solutions found (**n.o.s.f.**), number of considered solutions (**n.o.c.s.**), and structural quality measures:
 
+- **MDE (Mean Distance Error)**: average violation of distance bounds
+  \[\text{MDE}(G,X) = \frac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \max\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\}\]
+- **LDE (Largest Distance Error)**: maximum violation of distance bounds
+  \[\text{LDE}(G,X) = \max_{\{v_i,v_j\} \in E} \max\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\}\]
+- **RMSD (Root-Mean-Square Deviation)**: structural deviation of an embedding \(X\) from a reference structure \(X^*\)
+  \[\text{RMSD}(X,X^*) = \frac{1}{\sqrt{n}} \min_{Q \in O(3)} \|X^* - XQ\|_F, \|\cdot\|_F \text{ is the Frobenius norm, } O(3) \text{ the orthogonal group}\]
+
+The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues (\(N_{\text{aa}}\)) they contain. The set \(E_0\) corresponds to edges associated with exact distance constraints, while \(E_I\) corresponds to edges associated with interval distance constraints. The subset \(E_H \subset E_I \subset E\) denotes the edges in \(G\) whose weights correspond to interval distances between hydrogen atoms, with both bounds defined, in contrast to van der Waals distances, which only admit a lower bound.  
+
+| PDB id | N<sub>aa</sub> | \|V\| | \|E₀\| | \|Eᵢ\| | \|E<sub>H</sub>\| 
+|--------|---------|------|-------|--------|-----------|
+| 1tos | 10 | 52 | 141 | 1,185 | 56 |
+| 1uao | 10 | 52 | 141 | 1,185 | 70 |
+| 1kuw | 10 | 52 | 141 | 1,185 | 76 |
+| 1id6 | 15 | 77 | 211 | 2,715 | 106 |
+| 1dng | 15 | 77 | 211 | 2,715 | 114 |
+| 1o53 | 15 | 77 | 211 | 2,715 | 116 | 
+| 1du1 | 20 | 102 | 281 | 4,870 | 128 | 
+| 1dpk | 20 | 102 | 281 | 4,870 | 138 | 
+| 1ho7 | 20 | 102 | 281 | 4,870 | 166 | 
+| 1ckz | 25 | 127 | 351 | 7,650 | 148 |
+| 1lfc | 25 | 127 | 351 | 7,650 | 163 |
+| 1a11 | 25 | 127 | 351 | 7,650 | 207 |
+| 1ho0 | 30 | 152 | 421 | 11,055 | 167 |
+| 1mmc | 30 | 152 | 421 | 11,055 | 223 |
+| 1d0r | 30 | 152 | 421 | 11,055 | 229 |
+| 1zwd | 35 | 177 | 491 | 15,085 | 240 |
+| 1d1h | 35 | 177 | 491 | 15,085 | 245 |
+| 1spf | 35 | 177 | 491 | 15,085 | 277 |
+| 1aml | 40 | 202 | 561 | 19,740 | 267 |
+| 1ba4 | 40 | 202 | 561 | 19,740 | 301 |
+| 1c56 | 40 | 202 | 561 | 19,740 | 303 |
+  
+All algorithms were implemented in C and compiled with **GCC 13.3.0** using the `-O3` optimization flag. The experiments were carried out on a system equipped with an **Intel Xeon Silver 4114 CPU** (10 cores, 20 threads, max frequency 3.0 GHz) and **156 GB of RAM**, running **Ubuntu 24.04.3 LTS**.  
+
+Each instance was executed in **single-thread mode**, with up to seven instances running in parallel. The **CPU time limit** for each run was set to **12 hours**.  
+  
 <!-- RESULTS START -->
 ## Sample Size = 5
 
