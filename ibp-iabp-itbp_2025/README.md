@@ -41,8 +41,8 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 **DE (Distance Error)** — violation of distance bounds
 
 $$
-\mathrm{DE}(v_i, v_j, \underline{d}{i,j}, \overline{d}{i,j}) = 
-\max(0,\ \underline{d}_{i,j} - \lVert x_i - x_j \rVert,\ \lVert x_i - x_j \rVert - \overline{d}{i,j}).
+\mathrm{DE}(\{v_i, v_j\}, x_i, x_j) = 
+\max(0,\ \underline{d}_{i,j} - \lVert x_i - x_j \rVert,\ \lVert x_i - x_j \rVert - \overline{d}_{i,j}).
 $$
 
 **MDE (Mean Distance Error)** — average violation of distance bounds
