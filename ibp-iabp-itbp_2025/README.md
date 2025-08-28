@@ -50,7 +50,7 @@ $$
 $$
 \mathrm{LDE}(G,X)=
 \max_{\{v_i,v_j\}\in E}
-\max\{\,0,\ \underline{d}_{i,j}-\left\|x_i-x_j\right\|,\ \left\|x_i-x_j\right\|-\overline{d}{i,j}\,\}.
+\max\{\,0,\ \underline{d}_{i,j} - \lVert x_i - x_j \rVert,\ \lVert x_i - x_j \rVert - \overline{d}{i,j}\,\}.
 $$
 
 **RMSD (Root-Mean-Square Deviation)** -- deviation of embedding $$X$$ from reference $$X^*$$
