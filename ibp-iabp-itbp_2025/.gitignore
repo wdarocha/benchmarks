@@ -1,0 +1,28 @@
+# Logs and runtime files
+/logs/
+/*.log
+run.pid
+run_parallel.pid
+command.txt
+results.dat
+.generated_files_stamp
+.main_exec_path
+
+# Generated scripts
+create_input_files.sh
+create_run_commands.sh
+run_parallel.sh
+build_results_md.sh
+
+# Build system
+Makefile
+
+# Editor/IDE configs
+.vscode/
+.idea/
+*.swp
+*~
+
+# System files
+.DS_Store
+Thumbs.db
