@@ -1,2 +1,0 @@
-****************** iBP version 1.0.0 (2025-08-21) ******************
-iBP: Time limit reached -- search terminated after finding at least one solution.
