@@ -13,6 +13,7 @@ create_input_files.sh
 create_run_commands.sh
 run_parallel.sh
 build_results_md.sh
+results.md
 
 # Build system
 Makefile
