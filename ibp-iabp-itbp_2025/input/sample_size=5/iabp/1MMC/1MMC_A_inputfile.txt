@@ -1,0 +1,12 @@
+structure id: 1MMC
+structure chain: A
+method: iabp
+distance constraints file: dataset/1MMC/I_1MMC_model1_chainA.dat
+cliques and given torsion angles file: dataset/1MMC/T_1MMC_model1_chainA.dat
+reference structure xyz file: dataset/1MMC/X_1MMC_model1_chainA.dat
+time limit (days-hours:minutes:seconds): 0-12:00:00
+largest admissible distance deviation (in Ångströms): 0.01
+angular resolution (in degrees): 5.00
+number of solutions (set to 0 for all solutions): 25
+sample size: 5
+RMSD threshold to consider solutions different (in Ångströms): 3.0

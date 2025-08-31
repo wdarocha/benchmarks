@@ -1,0 +1,1 @@
+/home/wdarocha/BP_Algorithms_for_iDDGP/build/bin/./main input/sample_size=13/ibp/1KUW/1KUW_A_ddgpHCorder9_inputfile.txt results/sample_size=13/ibp/1KUW/ddgpHCorder9 > results/sample_size=13/ibp/1KUW/ddgpHCorder9/out.txt
