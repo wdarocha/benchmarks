@@ -101,7 +101,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 ### iabp
 
-| PDB id | l.e.v. | CPU time (s) | n.o.e.v. | n.o.f.s. | n.o.c.s. | maxMDE | maxLDE | minRMSD |
+| PDB id | l.e.v. | CPU time (s) | n.o.e.v. | n.o.s.f. | n.o.c.s. | maxMDE | maxLDE | minRMSD |
 |:-------|-------:|-------------:|---------:|---------:|---------:|-------:|-------:|--------:|
 | 1TOS | 52 | 43200.0000 | 3250662483 | 605283935 | 4 | 0.000045900 | 0.044073 | 1.2615 |
 | 1UAO | 52 | 43200.0000 | 6379548703 | 582638955 | 1 | 0.000056880 | 0.067364 | 0.3707 |
@@ -127,7 +127,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 ### itbp
 
-| PDB id | l.e.v. | CPU time (s) | n.o.e.v. | n.o.f.s. | n.o.c.s. | maxMDE | maxLDE | minRMSD |
+| PDB id | l.e.v. | CPU time (s) | n.o.e.v. | n.o.s.f. | n.o.c.s. | maxMDE | maxLDE | minRMSD |
 |:-------|-------:|-------------:|---------:|---------:|---------:|-------:|-------:|--------:|
 | 1TOS | 52 | 9336.7889 | 729132463 | 134308160 | 4 | 0.000050650 | 0.042222 | 0.2385 |
 | 1UAO | 52 | 5.6407 | 3084404 | 44768 | 1 | 0.000025690 | 0.025277 | 0.2780 |
@@ -156,7 +156,7 @@ The following tables present the benchmark results for **iBP**, **iABP**, and **
 
 ### ibp
 
-| PDB id | l.e.v. | CPU time (s) | n.o.e.v. | n.o.f.s. | n.o.c.s. | maxMDE | maxLDE | minRMSD |
+| PDB id | l.e.v. | CPU time (s) | n.o.e.v. | n.o.s.f. | n.o.c.s. | maxMDE | maxLDE | minRMSD |
 |:-------|-------:|-------------:|---------:|---------:|---------:|-------:|-------:|--------:|
 | 1TOS | 52 | 43200.0000 | 10702024605 | 613843230 | 3 | 0.000004150 | 0.002084 | 1.4043 |
 | 1UAO | 52 | 43200.0000 | 36880683260 | 613267527 | 1 | 0.000004570 | 0.002791 | 0.3161 |
