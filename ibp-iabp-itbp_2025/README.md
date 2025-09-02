@@ -2,7 +2,7 @@
 
 This folder contains the benchmark datasets and results associated with the article:
 
-> **"A Novel Branch-and-Prune Algorithmic Framework for the 3D Interval Discretizable Distance Geometry Problem: An Approach Based on Torsion Angles of Molecular Structures"**  
+> **"An Angle-Based Algorithmic Framework for the Interval Discretizable Distance Geometry Problem"**  
 > W. A. A. da Rocha, C. Lavor, L. Liberti, L. de Melo Costa, L. D. Secchin, T. E. Malliavin  
 > [arXiv:2508.09143](https://arxiv.org/abs/2508.09143), 2025.
 
@@ -191,8 +191,8 @@ If you use these benchmarks, please cite the article:
 
 ```
 @article{daRocha2025BP,
-	title={A Novel Branch-and-Prune Algorithmic Framework for the 3D Interval Discretizable Distance Geometry Problem: An Approach Based on Torsion Angles of Molecular Structures},
-	author={da Rocha, Wagner A. A. and Lavor, Carlile and Liberti, Leo and de Melo Costa, Leticia and Secchin, Leonardo D. and Malliavin, Thérèse E.},
+	title={An Angle-Based Algorithmic Framework for the Interval Discretizable Distance Geometry Problem},
+	author={da Rocha, Wagner and Lavor, Carlile and Liberti, Leo and de Melo Costa, Leticia and Secchin, Leonardo D. and Malliavin, Thérèse E.},
 	journal={arXiv preprint arXiv:2508.09143},
 	year={2025}
 }

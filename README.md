@@ -9,7 +9,7 @@ It is designed as a long-term archive to ensure that past experiments remain ava
 
 - **ibp-iabp-itbp_2025/**  
   Benchmarks associated with the article:  
-  *"A Novel Branch-and-Prune Algorithmic Framework for the 3D Interval Discretizable Distance Geometry Problem: An Approach Based on Torsion Angles of Molecular Structures"*  
+  *"An Angle-Based Algorithmic Framework for the Interval Discretizable Distance Geometry Problem"*  
   ([arXiv:2508.09143](https://arxiv.org/abs/2508.09143))
 
 ---
