@@ -3,14 +3,14 @@
 This folder contains the benchmark datasets and results associated with the article:
 
 > **"An Angle-Based Algorithmic Framework for the Interval Discretizable Distance Geometry Problem"**  
-> W. A. A. da Rocha, C. Lavor, L. Liberti, L. de Melo Costa, L. D. Secchin, T. E. Malliavin  
+> W. da Rocha, C. Lavor, L. Liberti, L. de Melo Costa, L. D. Secchin, T. E. Malliavin  
 > [arXiv:2508.09143](https://arxiv.org/abs/2508.09143), 2025.
 
 ---
 
 ## 📂 Contents
 
-- **Input files** used for the iBP, iABP, and iTBP experiments.  
+- **Input files** used for the interval Branch-and-Prune (iBP), the interval Angular Branch-and-Prune (iABP), and interval Torsion-angle Branch-and-Prune (iTBP) experiments.  
 - **Result files** including solution sets and metrics.  
 - **Scripts** to validate benchmark runs.  
 
