@@ -1,4 +1,4 @@
-# Benchmarks: iBP, iABP, and iTBP (2025)
+# Benchmarks: *i*BP, *i*ABP, and *i*TBP (2025)
 
 This folder contains the benchmark datasets and results associated with the article:
 
@@ -10,7 +10,7 @@ This folder contains the benchmark datasets and results associated with the arti
 
 ## 📂 Contents
 
-- **Input files** used for the interval Branch-and-Prune (iBP), the interval Angular Branch-and-Prune (iABP), and interval Torsion-angle Branch-and-Prune (iTBP) experiments.  
+- **Input files** used for the interval Branch-and-Prune (*i*BP), the interval Angular Branch-and-Prune (*i*ABP), and interval Torsion-angle Branch-and-Prune (*i*TBP) experiments.  
 - **Result files** including solution sets and metrics.  
 - **Scripts** to validate benchmark runs.  
 
@@ -19,7 +19,7 @@ This folder contains the benchmark datasets and results associated with the arti
 ## ▶️ Usage
 
 Run the benchmarks by executing the `main` binary over your input files.
-The algorithms (iBP, iABP, iTBP) are implemented in
+The algorithms (*i*BP, *i*ABP, *i*TBP) are implemented in
 [BP_Algorithms_for_iDDGP](https://github.com/wdarocha/BP_Algorithms_for_iDDGP).
 
 ### Command
@@ -104,13 +104,20 @@ These computational results refer to interval distance constraints with differen
 
 The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$.
 
-The following tables present the consolidated benchmark results for **iBP**, **iABP**, and **iTBP**. They include the last embedded vertex (**l.e.v.**), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively, produced by algorithm $a$.
+The following tables present the consolidated benchmark results for ***i*BP**, ***i*ABP**, and ***i*TBP**. They include the last embedded vertex (**l.e.v.**), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively, produced by algorithm $a$.
 
 The benchmark tables report the Mean Distance Error (MDE), the Largest Distance Error (LDE), and the Root Mean Square Deviation (RMSD), defined as follows:
 
+$$
+\begin{aligned}
+\Delta_{v_i,v_j}(G,X) &:= \max\big\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\big\},\\[0.2cm]
+\mathrm{MDE}(G,X) &:= \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),\\[0.2cm]
+\mathrm{LDE}(G,X) &:= \max_{\{v_i,v_j\} \in E} \Big\{\Delta_{v_i,v_j}(G,X)\Big\},\\[0.2cm]
+\mathrm{RMSD}(X,X^*) &:= \dfrac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \|X^*-XQ\|_F.
+\end{aligned}
+$$
 
-
-Here, $\| \cdot \|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
+Here, $|| \cdot ||_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
 
 The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
 
@@ -118,7 +125,7 @@ To assess structural diversity and geometric accuracy, we compute the number of 
 
 ## $\varepsilon_{\mathrm{short}} = 0.1 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 0.5 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for iBP, whereas $|T_i^\pm| = 5$ was used for both iABP and iTBP.
+For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -355,7 +362,7 @@ For this case, $|T_i^\pm| = 9$ was used for iBP, whereas $|T_i^\pm| = 5$ was use
 
 ## $\varepsilon_{\mathrm{short}} = 0.5 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 1.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for iBP, whereas $|T_i^\pm| = 5$ was used for both iABP and iTBP.
+For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -1207,7 +1214,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 
 ## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 11$ was used for iBP, whereas $|T_i^\pm| = 5$ was used for both iABP and iTBP.
+For this case, $|T_i^\pm| = 11$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -1444,7 +1451,7 @@ For this case, $|T_i^\pm| = 11$ was used for iBP, whereas $|T_i^\pm| = 5$ was us
 
 ## $\varepsilon_{\mathrm{short}} = 2.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 13$ for iBP, $|T_i^\pm| = 9$ for iABP, and $|T_i^\pm| = 7$ for iTBP.
+For this case, $|T_i^\pm| = 13$ for *i*BP, $|T_i^\pm| = 9$ for *i*ABP, and $|T_i^\pm| = 7$ for *i*TBP.
 
 <table>
   <thead>
