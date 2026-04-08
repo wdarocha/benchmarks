@@ -154,14 +154,14 @@ For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was u
       <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
+      <th colspan="3">$i$BP</th>
+      <th colspan="3">$i$ABP</th>
+      <th colspan="3">$i$TBP</th>
+      <th colspan="3">$i$BP</th>
+      <th colspan="3">$i$ABP</th>
+      <th colspan="3">$i$TBP</th>
+      <th colspan="3">$i$BP</th>
+      <th colspan="3">$i$ABP</th>
       <th>$i$TBP</th>
       <th>$i$BP</th>
       <th>$i$ABP</th>
