@@ -103,11 +103,11 @@ Each instance was executed in **single-thread mode**, with up to seven instances
 These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as
 
 $$
-\mathcal{D}_{ij} =
+\mathcal{D}_{i,j} =
 \left[
-\max\left(d_{ij}^* - \frac{\varepsilon_{ij}}{2},\ \mathrm{vdwr\_hh}\right),
+\max\left(d_{i,j}^* - \frac{\varepsilon_{i,j}}{2},\ \mathrm{vdwr\_hh}\right),
 \
-\min\left(d_{ij}^* + \frac{\varepsilon_{ij}}{2},\ d_{\mathrm{max}}\right)
+\min\left(d_{i,j}^* + \frac{\varepsilon_{i,j}}{2},\ d_{\mathrm{max}}\right)
 \right]
 $$
  
