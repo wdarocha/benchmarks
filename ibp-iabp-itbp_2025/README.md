@@ -120,7 +120,7 @@ The following tables present the consolidated benchmark results for ***i*BP**, *
 The benchmark tables report the Mean Distance Error (MDE), the Largest Distance Error (LDE), and the Root Mean Square Deviation (RMSD), defined as follows:
 
 $$
-\Delta_{v_i,v_j}(G,X) = \max\big(0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\big),
+\Delta_{v_i,v_j}(G,X) = \max\big(0,\ \underline{d}_{i,j} - \lVert x_i-x_j \rVert,\ \lVert x_i-x_j \rVert - \overline{d}_{i,j}\big),
 $$
 $$
 \mathrm{MDE}(G,X) = \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),
@@ -132,7 +132,7 @@ $$
 \mathrm{RMSD}(X,X^*) = \frac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert X - XQ \rVert_F,
 $$
 
-here, $|| \cdot ||_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices. The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
+here, $\lVert \cdot \rVert_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices. The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
 
 To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3 \ \mathrm{Angstroms}$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
 
