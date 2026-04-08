@@ -1,4 +1,4 @@
-# Benchmarks: *i*BP, *i*ABP, and *i*TBP (2025)
+# Benchmarks: iBP, iABP, and iTBP (2025)
 
 This folder contains the benchmark datasets and results associated with the article:
 
@@ -10,7 +10,7 @@ This folder contains the benchmark datasets and results associated with the arti
 
 ## 📂 Contents
 
-- **Input files** used for the interval Branch-and-Prune (*i*BP), the interval Angular Branch-and-Prune (*i*ABP), and interval Torsion-angle Branch-and-Prune (*i*TBP) experiments.  
+- **Input files** used for the interval Branch-and-Prune (iBP), the interval Angular Branch-and-Prune (iABP), and interval Torsion-angle Branch-and-Prune (iTBP) experiments.  
 - **Result files** including solution sets and metrics.  
 - **Scripts** to validate benchmark runs.  
 
@@ -19,7 +19,7 @@ This folder contains the benchmark datasets and results associated with the arti
 ## ▶️ Usage
 
 Run the benchmarks by executing the `main` binary over your input files.
-The algorithms (*i*BP, *i*ABP, *i*TBP) are implemented in
+The algorithms (iBP, iABP, iTBP) are implemented in
 [BP_Algorithms_for_iDDGP](https://github.com/wdarocha/BP_Algorithms_for_iDDGP).
 
 ### Command
@@ -58,7 +58,7 @@ Compilation instructions and the exact input-file format are documented in the m
 
 ## 📊 Results
 
-The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($N_{\text{aa}}$) they contain. The set $E_0$ corresponds to edges associated with exact distance constraints, while $E_I$ corresponds to edges associated with interval distance constraints. The subset $E_H \subset E_I \subset E$ denotes the edges in $G$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
+The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($$N_{\text{aa}}$$) they contain. The set $$E_0$$ corresponds to edges associated with exact distance constraints, while $$E_I$$ corresponds to edges associated with interval distance constraints. The subset $$E_H \subset E_I \subset E$$ denotes the edges in $$G$$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
 
 <table>
   <thead>
@@ -100,50 +100,37 @@ All algorithms were implemented in C and compiled with **GCC 13.3.0** using the 
 
 Each instance was executed in **single-thread mode**, with up to seven instances running in parallel. The **CPU time limit** for each run was set to **12 hours**.  
 
-These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as
-
-$$
-\mathcal{D}_{i,j} =
-\left[
-\max\left(d_{i,j}^* - \frac{\varepsilon_{i,j}}{2},\ \mathrm{vdwr\_hh}\right),
-\
-\min\left(d_{i,j}^* + \frac{\varepsilon_{i,j}}{2},\ d_{\mathrm{max}}\right)
-\right]
-$$
- 
-centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5 \ \mathrm{Angstroms}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
+These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as $\mathcal{D}_{i,j} = [\underline{d}_{i,j}, \overline{d}_{i,j}]$, centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5\ \text{\AA}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
 
 The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$.
 
-The following tables present the consolidated benchmark results for ***i*BP**, ***i*ABP**, and ***i*TBP**. They include the last embedded vertex (l.e.v.), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively, produced by algorithm $a$.
+The following tables present the consolidated benchmark results for **iBP**, **iABP**, and **iTBP**. They include the last embedded vertex (**l.e.v.**), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively.
 
 The benchmark tables report the Mean Distance Error (MDE), the Largest Distance Error (LDE), and the Root Mean Square Deviation (RMSD), defined as follows:
 
 $$
-\Delta_{v_i,v_j}(G,X) = \max\big(0,\ \underline{d}_{i,j} - \lVert x_i-x_j \rVert,\ \lVert x_i-x_j \rVert - \overline{d}_{i,j}\big),
-$$
-$$
-\mathrm{MDE}(G,X) = \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),
-$$
-$$
-\mathrm{LDE}(G,X) = \max_{\{v_i,v_j\} \in E} \Big(\Delta_{v_i,v_j}(G,X)\Big),
-$$
-$$
-\mathrm{RMSD}(X,X^*) = \frac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert X - XQ \rVert_F,
+\begin{aligned}
+\Delta_{v_i,v_j}(G,X) &:= \max\big\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\big\},\\[0.2cm]
+\mathrm{MDE}(G,X) &:= \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),\\[0.2cm]
+\mathrm{LDE}(G,X) &:= \max_{\{v_i,v_j\} \in E} \Big\{\Delta_{v_i,v_j}(G,X)\Big\},\\[0.2cm]
+\mathrm{RMSD}(X,X^*) &:= \dfrac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \|X^*-XQ\|_F.
+\end{aligned}
 $$
 
-here, $\lVert \cdot \rVert_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices. The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
+Here, $\|\cdot\|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
 
-To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3 \ \mathrm{Angstroms}$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
+The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
 
-## $\varepsilon_{\mathrm{short}} = 0.1 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 0.5 \ \mathrm{Angstroms}$
+To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3\ \text{\AA}$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
 
-For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
+## $\varepsilon_{\mathrm{short}} = 0.1 \ \AA$, $\varepsilon_{\mathrm{long}} = 0.5 \ \AA$
+
+For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
+      <th rowspan="2">pdb_id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -154,30 +141,30 @@ For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was u
       <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th colspan="3">$i$BP</th>
-      <th colspan="3">$i$ABP</th>
-      <th colspan="3">$i$TBP</th>
-      <th colspan="3">$i$BP</th>
-      <th colspan="3">$i$ABP</th>
-      <th colspan="3">$i$TBP</th>
-      <th colspan="3">$i$BP</th>
-      <th colspan="3">$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
@@ -373,14 +360,14 @@ For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was u
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 0.5 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 1.0 \ \mathrm{Angstroms}$
+## $\varepsilon_{\mathrm{short}} = 0.5 \ \AA$, $\varepsilon_{\mathrm{long}} = 1.0 \ \AA$
 
-For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
+For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
+      <th rowspan="2">pdb_id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -391,30 +378,30 @@ For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was u
       <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
@@ -610,14 +597,14 @@ For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was u
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 2.0 \ \mathrm{Angstroms}$
+## $\varepsilon_{\mathrm{short}} = 1.0 \ \AA$, $\varepsilon_{\mathrm{long}} = 2.0 \ \AA$
 
 For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
+      <th rowspan="2">pdb_id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -628,30 +615,30 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
@@ -1225,14 +1212,14 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
+## $\varepsilon_{\mathrm{short}} = 1.0 \ \AA$, $\varepsilon_{\mathrm{long}} = 3.0 \ \AA$
 
-For this case, $|T_i^\pm| = 11$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
+For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
+      <th rowspan="2">pdb_id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -1243,30 +1230,30 @@ For this case, $|T_i^\pm| = 11$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was 
       <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
@@ -1462,14 +1449,14 @@ For this case, $|T_i^\pm| = 11$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was 
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 2.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
+## $\varepsilon_{\mathrm{short}} = 2.0 \ \AA$, $\varepsilon_{\mathrm{long}} = 3.0 \ \AA$
 
-For this case, $|T_i^\pm| = 13$ for *i*BP, $|T_i^\pm| = 9$ for *i*ABP, and $|T_i^\pm| = 7$ for *i*TBP.
+For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i^\pm| = 7$ for $i$TBP.
 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
+      <th rowspan="2">pdb_id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -1480,30 +1467,30 @@ For this case, $|T_i^\pm| = 13$ for *i*BP, $|T_i^\pm| = 9$ for *i*ABP, and $|T_i
       <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
-      <th>$i$BP</th>
-      <th>$i$ABP</th>
-      <th>$i$TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
+      <th><i>i</i>BP</th>
+      <th><i>i</i>ABP</th>
+      <th><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
