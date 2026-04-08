@@ -125,7 +125,7 @@ The MDE and LDE metrics evaluate how well the solution satisfies the input insta
 
 To assess structural diversity and geometric accuracy, we compute the number of considered solutions $$c_a$$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3$ Å. We also report the maximum MDE ($$\overline{\mathrm{MDE}}$$), maximum LDE ($$\overline{\mathrm{LDE}}$$), and the minimum RMSD ($$\underline{\mathrm{RMSD}}$$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $$a$$.
 
-## $\varepsilon_{\mathrm{short}} = 0.1$ Å, $\varepsilon_{\mathrm{long}} = 0.5$ Å
+## $\varepsilon_{\mathrm{short}} = 0.1$ $$\AA$$, $\varepsilon_{\mathrm{long}} = 0.5$ Å
 
 For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
