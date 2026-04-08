@@ -100,7 +100,7 @@ All algorithms were implemented in C and compiled with **GCC 13.3.0** using the 
 
 Each instance was executed in **single-thread mode**, with up to seven instances running in parallel. The **CPU time limit** for each run was set to **12 hours**.  
 
-These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as $\mathcal{D}_{i,j} = [\underline{d}_{i,j}, \overline{d}_{i,j}]$, centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5\ \text{\AA}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
+These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as $\mathcal{D}_{i,j} = \left[\underline{d}_{i,j}, \overline{d}_{i,j}\right]$, centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5 \ \AA$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
 
 The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$.
 
@@ -109,19 +109,21 @@ The following tables present the consolidated benchmark results for **iBP**, **i
 The benchmark tables report the Mean Distance Error (MDE), the Largest Distance Error (LDE), and the Root Mean Square Deviation (RMSD), defined as follows:
 
 $$
+
 \begin{aligned}
 \Delta_{v_i,v_j}(G,X) &:= \max\big\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\big\},\\[0.2cm]
 \mathrm{MDE}(G,X) &:= \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),\\[0.2cm]
 \mathrm{LDE}(G,X) &:= \max_{\{v_i,v_j\} \in E} \Big\{\Delta_{v_i,v_j}(G,X)\Big\},\\[0.2cm]
 \mathrm{RMSD}(X,X^*) &:= \dfrac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \|X^*-XQ\|_F.
 \end{aligned}
+
 $$
 
 Here, $\|\cdot\|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
 
 The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
 
-To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3\ \text{\AA}$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
+To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3\ \AA$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
 
 ## $\varepsilon_{\mathrm{short}} = 0.1 \ \AA$, $\varepsilon_{\mathrm{long}} = 0.5 \ \AA$
 
