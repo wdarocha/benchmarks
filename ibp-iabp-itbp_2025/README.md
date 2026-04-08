@@ -129,7 +129,7 @@ $$
 \mathrm{LDE}(G,X) = \max_{\{v_i,v_j\} \in E} \Big(\Delta_{v_i,v_j}(G,X)\Big),
 $$
 $$
-\mathrm{RMSD}(X,X^*) = \frac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert  \rVert_F,
+\mathrm{RMSD}(X,X^*) = \frac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert X^* - XQ \rVert_F,
 $$
 
 here, $\lVert \cdot \rVert_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices. The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
