@@ -127,7 +127,7 @@ To assess structural diversity and geometric accuracy, we compute the number of 
 
 ## $\varepsilon_{\mathrm{short}} = 0.1 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 0.5 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 9$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was used for both $$i$$ABP and $$i$$TBP.
 
 <table>
   <thead>
@@ -364,7 +364,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 
 ## $\varepsilon_{\mathrm{short}} = 0.5 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 1.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 9$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was used for both $$i$$ABP and $$i$$TBP.
 
 <table>
   <thead>
@@ -1216,7 +1216,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 
 ## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 11$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was used for both $$i$$ABP and $$i$$TBP.
 
 <table>
   <thead>
@@ -1453,7 +1453,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 
 ## $\varepsilon_{\mathrm{short}} = 2.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i^\pm| = 7$ for $i$TBP.
+For this case, $|T_i^\pm| = 13$ for $$i$$BP, $|T_i^\pm| = 9$ for $$i$$ABP, and $|T_i^\pm| = 7$ for $$i$$TBP.
 
 <table>
   <thead>
