@@ -58,7 +58,7 @@ Compilation instructions and the exact input-file format are documented in the m
 
 ## 📊 Results
 
-The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($$N_{\text{aa}}$$) they contain. The set $$E_0$$ corresponds to edges associated with exact distance constraints, while $$E_I$$ corresponds to edges associated with interval distance constraints. The subset $$E_H \subset E_I \subset E$$ denotes the edges in $$G$$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
+The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($N_{\text{aa}}$) they contain. The set $E_0$ corresponds to edges associated with exact distance constraints, while $E_I$ corresponds to edges associated with interval distance constraints. The subset $E_H \subset E_I \subset E$ denotes the edges in $G$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
 
 <table>
   <thead>
@@ -102,32 +102,23 @@ Each instance was executed in **single-thread mode**, with up to seven instances
 
 These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as $\mathcal{D}_{i,j} = \left[\underline{d}_{i,j}, \overline{d}_{i,j}\right]$, centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5 \ \mathrm{Angstroms}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
 
-The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $$(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$$.
+The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$.
 
-The following tables present the consolidated benchmark results for **iBP**, **iABP**, and **iTBP**. They include the last embedded vertex (**l.e.v.**), CPU time, and the counters $$e_a$$, $$s_a$$, and $$c_a$$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively, produced by algorithm $$a$$.
+The following tables present the consolidated benchmark results for **iBP**, **iABP**, and **iTBP**. They include the last embedded vertex (**l.e.v.**), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively, produced by algorithm $a$.
 
 The benchmark tables report the Mean Distance Error (MDE), the Largest Distance Error (LDE), and the Root Mean Square Deviation (RMSD), defined as follows:
 
-$$
 
-\begin{aligned}
-\Delta_{v_i,v_j}(G,X) &:= \max\big\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\big\},\\[0.2cm]
-\mathrm{MDE}(G,X) &:= \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),\\[0.2cm]
-\mathrm{LDE}(G,X) &:= \max_{\{v_i,v_j\} \in E} \Big\{\Delta_{v_i,v_j}(G,X)\Big\},\\[0.2cm]
-\mathrm{RMSD}(X,X^*) &:= \dfrac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \|X^*-XQ\|_F.
-\end{aligned}
 
-$$
+Here, $\| \cdot \|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
 
-Here, $$\| \cdot \|_F$$ denotes the Frobenius norm and $$O(3)$$ is the group of $$3 \times 3$$ orthogonal matrices.
+The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
 
-The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $$X^*$$.
-
-To assess structural diversity and geometric accuracy, we compute the number of considered solutions $$c_a$$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3 \ \mathrm{Angstroms}$. We also report the maximum MDE ($$\overline{\mathrm{MDE}}$$), maximum LDE ($$\overline{\mathrm{LDE}}$$), and the minimum RMSD ($$\underline{\mathrm{RMSD}}$$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $$a$$.
+To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3 \ \mathrm{Angstroms}$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
 
 ## $\varepsilon_{\mathrm{short}} = 0.1 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 0.5 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was used for both $$i$$ABP and $$i$$TBP.
+For this case, $|T_i^\pm| = 9$ was used for iBP, whereas $|T_i^\pm| = 5$ was used for both iABP and iTBP.
 
 <table>
   <thead>
@@ -364,7 +355,7 @@ For this case, $|T_i^\pm| = 9$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was
 
 ## $\varepsilon_{\mathrm{short}} = 0.5 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 1.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was used for both $$i$$ABP and $$i$$TBP.
+For this case, $|T_i^\pm| = 9$ was used for iBP, whereas $|T_i^\pm| = 5$ was used for both iABP and iTBP.
 
 <table>
   <thead>
@@ -1216,7 +1207,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 
 ## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 11$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ was used for both $$i$$ABP and $$i$$TBP.
+For this case, $|T_i^\pm| = 11$ was used for iBP, whereas $|T_i^\pm| = 5$ was used for both iABP and iTBP.
 
 <table>
   <thead>
@@ -1453,7 +1444,7 @@ For this case, $|T_i^\pm| = 11$ was used for $$i$$BP, whereas $|T_i^\pm| = 5$ wa
 
 ## $\varepsilon_{\mathrm{short}} = 2.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 13$ for $$i$$BP, $|T_i^\pm| = 9$ for $$i$$ABP, and $|T_i^\pm| = 7$ for $$i$$TBP.
+For this case, $|T_i^\pm| = 13$ for iBP, $|T_i^\pm| = 9$ for iABP, and $|T_i^\pm| = 7$ for iTBP.
 
 <table>
   <thead>
