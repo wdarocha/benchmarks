@@ -18,7 +18,7 @@ This folder contains the benchmark datasets and results associated with the arti
 
 ## ▶️ Usage
 
-Run the benchmarks by executing the `main` binary over your input files.
+Run the benchmarks by executing the `main` binary over the prepared input files in `input/`.
 The algorithms (iBP, iABP, iTBP) are implemented in
 [BP_Algorithms_for_iDDGP](https://github.com/wdarocha/BP_Algorithms_for_iDDGP).
 
@@ -30,21 +30,35 @@ The algorithms (iBP, iABP, iTBP) are implemented in
 
 **Arguments**
 
-* `<input_file>`: path to a single formatted input file (see the main repo for the spec).
-* `<output_folder>`: directory where results and logs will be written (created if missing).
+- `<input_file>`: path to one prepared solver input file in `input/`.
+- `<output_folder>`: root directory where the solver will write the generated results.
+
+### Repository layout
+
+- `dataset/<interval>/<PDB>/`: raw instance data, including `I_*.dat`, `T_*.dat`, and `X_*.dat`.
+- `input/sample_size=<k>/<method>/<PDB>/*_inputfile.txt`: solver-ready input files.
+- `results/sample_size=<k>/<method>/<interval>/<PDB>/`: generated outputs, typically containing `<PDB>.pdb`, `out.txt`, and `results.txt`.
 
 ### Single-file example
 
 ```bash
-./build/bin/main dataset/1TOS_input_file.txt results/
+./build/bin/main input/sample_size=5/iabp/1KUW/1KUW_A_1020_inputfile.txt results/
 ```
 
-### Batch over a folder (bash loop)
+### Batch execution
 
-Process every `*_input_file.txt` in `dataset/`:
+Process every prepared input file in `input/`:
 
 ```bash
-for f in dataset/*_input_file.txt; do
+find input -name '*_inputfile.txt' | sort | while read -r f; do
+	./build/bin/main "$f" results/
+done
+```
+
+Run only one configuration, for example `sample_size=5` with `iabp`:
+
+```bash
+find input/sample_size=5/iabp -name '*_inputfile.txt' | sort | while read -r f; do
 	./build/bin/main "$f" results/
 done
 ```
@@ -72,27 +86,27 @@ The protein dataset used in these experiments is summarized in the following tab
     </tr>
   </thead>
   <tbody>
-    <tr><td align="right">1TOS</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">56</td></tr>
-    <tr><td align="right">1UAO</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">70</td></tr>
-    <tr><td align="right">1KUW</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">76</td></tr>
-    <tr><td align="right">1ID6</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">106</td></tr>
-    <tr><td align="right">1DNG</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">114</td></tr>
-    <tr><td align="right">1O53</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">116</td></tr>
-    <tr><td align="right">1DU1</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">128</td></tr>
-    <tr><td align="right">1DPK</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">138</td></tr>
-    <tr><td align="right">1HO7</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">166</td></tr>
-    <tr><td align="right">1CKZ</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">148</td></tr>
-    <tr><td align="right">1LFC</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">163</td></tr>
-    <tr><td align="right">1A11</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">207</td></tr>
-    <tr><td align="right">1HO0</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">167</td></tr>
-    <tr><td align="right">1MMC</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">223</td></tr>
-    <tr><td align="right">1D0R</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">229</td></tr>
-    <tr><td align="right">1ZWD</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">240</td></tr>
-    <tr><td align="right">1D1H</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">245</td></tr>
-    <tr><td align="right">1SPF</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">277</td></tr>
-    <tr><td align="right">1AML</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">267</td></tr>
-    <tr><td align="right">1BA4</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">301</td></tr>
-    <tr><td align="right">1C56</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">303</td></tr>
+    <tr><td align="center">1TOS</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">56</td></tr>
+    <tr><td align="center">1UAO</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">70</td></tr>
+    <tr><td align="center">1KUW</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">76</td></tr>
+    <tr><td align="center">1ID6</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">106</td></tr>
+    <tr><td align="center">1DNG</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">114</td></tr>
+    <tr><td align="center">1O53</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">116</td></tr>
+    <tr><td align="center">1DU1</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">128</td></tr>
+    <tr><td align="center">1DPK</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">138</td></tr>
+    <tr><td align="center">1HO7</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">166</td></tr>
+    <tr><td align="center">1CKZ</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">148</td></tr>
+    <tr><td align="center">1LFC</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">163</td></tr>
+    <tr><td align="center">1A11</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">207</td></tr>
+    <tr><td align="center">1HO0</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">167</td></tr>
+    <tr><td align="center">1MMC</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">223</td></tr>
+    <tr><td align="center">1D0R</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">229</td></tr>
+    <tr><td align="center">1ZWD</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">240</td></tr>
+    <tr><td align="center">1D1H</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">245</td></tr>
+    <tr><td align="center">1SPF</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">277</td></tr>
+    <tr><td align="center">1AML</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">267</td></tr>
+    <tr><td align="center">1BA4</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">301</td></tr>
+    <tr><td align="center">1C56</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">303</td></tr>
   </tbody>
 </table>
   
@@ -138,7 +152,7 @@ To assess structural diversity and geometric accuracy, we compute the number of 
 
 ## $\varepsilon_{\mathrm{short}} = 0.1 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 0.5 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -182,7 +196,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
   </thead>
   <tbody>
     <tr>
-      <td align="right">1KUW</td>
+      <td align="center">1KUW</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -209,7 +223,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.06</td>
     </tr>
     <tr>
-      <td align="right">1O53</td>
+      <td align="center">1O53</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -236,7 +250,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.06</td>
     </tr>
     <tr>
-      <td align="right">1HO7</td>
+      <td align="center">1HO7</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -263,7 +277,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.08</td>
     </tr>
     <tr>
-      <td align="right">1A11</td>
+      <td align="center">1A11</td>
       <td align="right">127</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -290,7 +304,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.11</td>
     </tr>
     <tr>
-      <td align="right">1D0R</td>
+      <td align="center">1D0R</td>
       <td align="right">152</td>
       <td align="right">152</td>
       <td align="right">152</td>
@@ -317,7 +331,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.13</td>
     </tr>
     <tr>
-      <td align="right">1SPF</td>
+      <td align="center">1SPF</td>
       <td align="right">177</td>
       <td align="right">177</td>
       <td align="right">177</td>
@@ -344,7 +358,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.35</td>
     </tr>
     <tr>
-      <td align="right">1AML</td>
+      <td align="center">1AML</td>
       <td align="right">202</td>
       <td align="right">202</td>
       <td align="right">202</td>
@@ -375,7 +389,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 
 ## $\varepsilon_{\mathrm{short}} = 0.5 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 1.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 9$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -419,7 +433,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
   </thead>
   <tbody>
     <tr>
-      <td align="right">1KUW</td>
+      <td align="center">1KUW</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -446,7 +460,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.14</td>
     </tr>
     <tr>
-      <td align="right">1O53</td>
+      <td align="center">1O53</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -473,7 +487,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.18</td>
     </tr>
     <tr>
-      <td align="right">1HO7</td>
+      <td align="center">1HO7</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -500,7 +514,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.59</td>
     </tr>
     <tr>
-      <td align="right">1A11</td>
+      <td align="center">1A11</td>
       <td align="right">127</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -527,7 +541,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.39</td>
     </tr>
     <tr>
-      <td align="right">1D0R</td>
+      <td align="center">1D0R</td>
       <td align="right">152</td>
       <td align="right">152</td>
       <td align="right">152</td>
@@ -554,7 +568,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.52</td>
     </tr>
     <tr>
-      <td align="right">1SPF</td>
+      <td align="center">1SPF</td>
       <td align="right">177</td>
       <td align="right">177</td>
       <td align="right">177</td>
@@ -581,7 +595,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
       <td align="right">0.43</td>
     </tr>
     <tr>
-      <td align="right">1AML</td>
+      <td align="center">1AML</td>
       <td align="right">202</td>
       <td align="right">202</td>
       <td align="right">202</td>
@@ -612,7 +626,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 
 ## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 2.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 13$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -656,7 +670,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
   </thead>
   <tbody>
     <tr>
-      <td align="right">1TOS</td>
+      <td align="center">1TOS</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -683,7 +697,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.18</td>
     </tr>
     <tr>
-      <td align="right">1UAO</td>
+      <td align="center">1UAO</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -710,7 +724,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.24</td>
     </tr>
     <tr>
-      <td align="right">1KUW</td>
+      <td align="center">1KUW</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -737,7 +751,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.18</td>
     </tr>
     <tr>
-      <td align="right">1ID6</td>
+      <td align="center">1ID6</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -764,7 +778,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.28</td>
     </tr>
     <tr>
-      <td align="right">1DNG</td>
+      <td align="center">1DNG</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -791,7 +805,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.21</td>
     </tr>
     <tr>
-      <td align="right">1O53</td>
+      <td align="center">1O53</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -818,7 +832,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.44</td>
     </tr>
     <tr>
-      <td align="right">1DU1</td>
+      <td align="center">1DU1</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -845,7 +859,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">1.53</td>
     </tr>
     <tr>
-      <td align="right">1DPK</td>
+      <td align="center">1DPK</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -872,7 +886,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.98</td>
     </tr>
     <tr>
-      <td align="right">1HO7</td>
+      <td align="center">1HO7</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -899,7 +913,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.78</td>
     </tr>
     <tr>
-      <td align="right">1CKZ</td>
+      <td align="center">1CKZ</td>
       <td align="right">127</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -926,7 +940,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">3.42</td>
     </tr>
     <tr>
-      <td align="right">1LFC</td>
+      <td align="center">1LFC</td>
       <td align="right">103</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -953,7 +967,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.82</td>
     </tr>
     <tr>
-      <td align="right">1A11</td>
+      <td align="center">1A11</td>
       <td align="right">127</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -980,7 +994,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.81</td>
     </tr>
     <tr>
-      <td align="right">1HO0</td>
+      <td align="center">1HO0</td>
       <td align="right">152</td>
       <td align="right">152</td>
       <td align="right">152</td>
@@ -1007,7 +1021,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">5.44</td>
     </tr>
     <tr>
-      <td align="right">1MMC</td>
+      <td align="center">1MMC</td>
       <td align="right">95</td>
       <td align="right">97</td>
       <td align="right">97</td>
@@ -1034,7 +1048,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">---</td>
     </tr>
     <tr>
-      <td align="right">1D0R</td>
+      <td align="center">1D0R</td>
       <td align="right">152</td>
       <td align="right">152</td>
       <td align="right">152</td>
@@ -1061,7 +1075,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.72</td>
     </tr>
     <tr>
-      <td align="right">1ZWD</td>
+      <td align="center">1ZWD</td>
       <td align="right">177</td>
       <td align="right">177</td>
       <td align="right">177</td>
@@ -1088,7 +1102,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">2.95</td>
     </tr>
     <tr>
-      <td align="right">1D1H</td>
+      <td align="center">1D1H</td>
       <td align="right">70</td>
       <td align="right">70</td>
       <td align="right">177</td>
@@ -1115,7 +1129,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.46</td>
     </tr>
     <tr>
-      <td align="right">1SPF</td>
+      <td align="center">1SPF</td>
       <td align="right">177</td>
       <td align="right">177</td>
       <td align="right">177</td>
@@ -1142,7 +1156,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.97</td>
     </tr>
     <tr>
-      <td align="right">1AML</td>
+      <td align="center">1AML</td>
       <td align="right">202</td>
       <td align="right">202</td>
       <td align="right">202</td>
@@ -1169,7 +1183,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">4.32</td>
     </tr>
     <tr>
-      <td align="right">1BA4</td>
+      <td align="center">1BA4</td>
       <td align="right">100</td>
       <td align="right">100</td>
       <td align="right">202</td>
@@ -1196,7 +1210,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">1.14</td>
     </tr>
     <tr>
-      <td align="right">1C56</td>
+      <td align="center">1C56</td>
       <td align="right">175</td>
       <td align="right">177</td>
       <td align="right">178</td>
@@ -1227,7 +1241,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 
 ## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
+For this case, $|T_i^\pm| = 11$ was used for *i*BP, whereas $|T_i^\pm| = 5$ was used for both *i*ABP and *i*TBP.
 
 <table>
   <thead>
@@ -1271,7 +1285,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
   </thead>
   <tbody>
     <tr>
-      <td align="right">1KUW</td>
+      <td align="center">1KUW</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -1298,7 +1312,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.23</td>
     </tr>
     <tr>
-      <td align="right">1O53</td>
+      <td align="center">1O53</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -1325,7 +1339,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.34</td>
     </tr>
     <tr>
-      <td align="right">1HO7</td>
+      <td align="center">1HO7</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -1352,7 +1366,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.86</td>
     </tr>
     <tr>
-      <td align="right">1A11</td>
+      <td align="center">1A11</td>
       <td align="right">127</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -1379,7 +1393,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.88</td>
     </tr>
     <tr>
-      <td align="right">1D0R</td>
+      <td align="center">1D0R</td>
       <td align="right">152</td>
       <td align="right">152</td>
       <td align="right">152</td>
@@ -1406,7 +1420,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">1.31</td>
     </tr>
     <tr>
-      <td align="right">1SPF</td>
+      <td align="center">1SPF</td>
       <td align="right">177</td>
       <td align="right">177</td>
       <td align="right">177</td>
@@ -1433,7 +1447,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
       <td align="right">0.83</td>
     </tr>
     <tr>
-      <td align="right">1AML</td>
+      <td align="center">1AML</td>
       <td align="right">202</td>
       <td align="right">202</td>
       <td align="right">202</td>
@@ -1464,7 +1478,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 
 ## $\varepsilon_{\mathrm{short}} = 2.0 \ \mathrm{Angstroms}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{Angstroms}$
 
-For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i^\pm| = 7$ for $i$TBP.
+For this case, $|T_i^\pm| = 13$ for *i*BP, $|T_i^\pm| = 9$ for *i*ABP, and $|T_i^\pm| = 7$ for *i*TBP.
 
 <table>
   <thead>
@@ -1508,7 +1522,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
   </thead>
   <tbody>
     <tr>
-      <td align="right">1KUW</td>
+      <td align="center">1KUW</td>
       <td align="right">52</td>
       <td align="right">52</td>
       <td align="right">52</td>
@@ -1535,7 +1549,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
       <td align="right">0.15</td>
     </tr>
     <tr>
-      <td align="right">1O53</td>
+      <td align="center">1O53</td>
       <td align="right">77</td>
       <td align="right">77</td>
       <td align="right">77</td>
@@ -1562,7 +1576,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
       <td align="right">0.64</td>
     </tr>
     <tr>
-      <td align="right">1HO7</td>
+      <td align="center">1HO7</td>
       <td align="right">102</td>
       <td align="right">102</td>
       <td align="right">102</td>
@@ -1589,7 +1603,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
       <td align="right">1.09</td>
     </tr>
     <tr>
-      <td align="right">1A11</td>
+      <td align="center">1A11</td>
       <td align="right">127</td>
       <td align="right">127</td>
       <td align="right">127</td>
@@ -1616,7 +1630,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
       <td align="right">1.46</td>
     </tr>
     <tr>
-      <td align="right">1D0R</td>
+      <td align="center">1D0R</td>
       <td align="right">152</td>
       <td align="right">152</td>
       <td align="right">152</td>
@@ -1643,7 +1657,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
       <td align="right">2.37</td>
     </tr>
     <tr>
-      <td align="right">1SPF</td>
+      <td align="center">1SPF</td>
       <td align="right">177</td>
       <td align="right">177</td>
       <td align="right">177</td>
@@ -1670,7 +1684,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
       <td align="right">2.20</td>
     </tr>
     <tr>
-      <td align="right">1AML</td>
+      <td align="center">1AML</td>
       <td align="right">202</td>
       <td align="right">202</td>
       <td align="right">202</td>
