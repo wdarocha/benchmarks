@@ -1,4 +1,4 @@
-# Benchmarks: $i$BP, $i$ABP, and $i$TBP (2026)
+# Benchmarks: *i*BP, *i*ABP, and *i*TBP (2026)
 
 This folder contains the benchmark datasets and results associated with the article:
 
@@ -10,7 +10,7 @@ This folder contains the benchmark datasets and results associated with the arti
 
 ## 📂 Contents
 
-- **Input files** used for the interval Branch-and-Prune (iBP), the interval Angular Branch-and-Prune (iABP), and interval Torsion-angle Branch-and-Prune (iTBP) experiments.  
+- **Input files** used for the interval Branch-and-Prune (*i*BP), the interval Angular Branch-and-Prune (*i*ABP), and interval Torsion-angle Branch-and-Prune (*i*TBP) experiments.  
 - **Result files** including solution sets and metrics.  
 - **Scripts** to validate benchmark runs.  
 
@@ -129,7 +129,7 @@ $$
 \mathrm{LDE}(G,X) = \max_{\{v_i,v_j\} \in E} \Big(\Delta_{v_i,v_j}(G,X)\Big),
 $$
 $$
-\mathrm{RMSD}(X,X^*) = \dfrac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert X^*-XQ \rVert_F,
+\mathrm{RMSD}(X,X^*) = \frac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert X^* - XQ \rVert_F,
 $$
 
 here, $\lVert \cdot \rVert_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices. The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
