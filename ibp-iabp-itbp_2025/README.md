@@ -60,39 +60,72 @@ Compilation instructions and the exact input-file format are documented in the m
 
 The protein dataset used in these experiments is summarized in the following table. The PDB structures were selected according to the number of amino acid residues ($$N_{\text{aa}}$$) they contain. The set $$E_0$$ corresponds to edges associated with exact distance constraints, while $$E_I$$ corresponds to edges associated with interval distance constraints. The subset $$E_H \subset E_I \subset E$$ denotes the edges in $$G$$ whose weights correspond to interval distances between hydrogen atoms, with both bounds defined.  
 
-| PDB id | N<sub>aa</sub> | \|V\| | \|E<sub>0</sub>\| | \|E<sub>I</sub>\| | \|E<sub>H</sub>\| 
-|--------|---------|------|-------|--------|-----------|
-| 1tos | 10 | 52 | 141 | 1,185 | 56 |
-| 1uao | 10 | 52 | 141 | 1,185 | 70 |
-| 1kuw | 10 | 52 | 141 | 1,185 | 76 |
-| 1id6 | 15 | 77 | 211 | 2,715 | 106 |
-| 1dng | 15 | 77 | 211 | 2,715 | 114 |
-| 1o53 | 15 | 77 | 211 | 2,715 | 116 | 
-| 1du1 | 20 | 102 | 281 | 4,870 | 128 | 
-| 1dpk | 20 | 102 | 281 | 4,870 | 138 | 
-| 1ho7 | 20 | 102 | 281 | 4,870 | 166 | 
-| 1ckz | 25 | 127 | 351 | 7,650 | 148 |
-| 1lfc | 25 | 127 | 351 | 7,650 | 163 |
-| 1a11 | 25 | 127 | 351 | 7,650 | 207 |
-| 1ho0 | 30 | 152 | 421 | 11,055 | 167 |
-| 1mmc | 30 | 152 | 421 | 11,055 | 223 |
-| 1d0r | 30 | 152 | 421 | 11,055 | 229 |
-| 1zwd | 35 | 177 | 491 | 15,085 | 240 |
-| 1d1h | 35 | 177 | 491 | 15,085 | 245 |
-| 1spf | 35 | 177 | 491 | 15,085 | 277 |
-| 1aml | 40 | 202 | 561 | 19,740 | 267 |
-| 1ba4 | 40 | 202 | 561 | 19,740 | 301 |
-| 1c56 | 40 | 202 | 561 | 19,740 | 303 |
+<table>
+  <thead>
+    <tr>
+      <th>PDB id</th>
+      <th>$N_{\mathrm{aa}}$</th>
+      <th>$|V|$</th>
+      <th>$|E_0|$</th>
+      <th>$|E_I|$</th>
+      <th>$|E_H|$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1TOS</td><td>10</td><td>52</td><td>141</td><td>1,185</td><td>56</td></tr>
+    <tr><td>1UAO</td><td>10</td><td>52</td><td>141</td><td>1,185</td><td>70</td></tr>
+    <tr><td>1KUW</td><td>10</td><td>52</td><td>141</td><td>1,185</td><td>76</td></tr>
+    <tr><td>1ID6</td><td>15</td><td>77</td><td>211</td><td>2,715</td><td>106</td></tr>
+    <tr><td>1DNG</td><td>15</td><td>77</td><td>211</td><td>2,715</td><td>114</td></tr>
+    <tr><td>1O53</td><td>15</td><td>77</td><td>211</td><td>2,715</td><td>116</td></tr>
+    <tr><td>1DU1</td><td>20</td><td>102</td><td>281</td><td>4,870</td><td>128</td></tr>
+    <tr><td>1DPK</td><td>20</td><td>102</td><td>281</td><td>4,870</td><td>138</td></tr>
+    <tr><td>1HO7</td><td>20</td><td>102</td><td>281</td><td>4,870</td><td>166</td></tr>
+    <tr><td>1CKZ</td><td>25</td><td>127</td><td>351</td><td>7,650</td><td>148</td></tr>
+    <tr><td>1LFC</td><td>25</td><td>127</td><td>351</td><td>7,650</td><td>163</td></tr>
+    <tr><td>1A11</td><td>25</td><td>127</td><td>351</td><td>7,650</td><td>207</td></tr>
+    <tr><td>1HO0</td><td>30</td><td>152</td><td>421</td><td>11,055</td><td>167</td></tr>
+    <tr><td>1MMC</td><td>30</td><td>152</td><td>421</td><td>11,055</td><td>223</td></tr>
+    <tr><td>1D0R</td><td>30</td><td>152</td><td>421</td><td>11,055</td><td>229</td></tr>
+    <tr><td>1ZWD</td><td>35</td><td>177</td><td>491</td><td>15,085</td><td>240</td></tr>
+    <tr><td>1D1H</td><td>35</td><td>177</td><td>491</td><td>15,085</td><td>245</td></tr>
+    <tr><td>1SPF</td><td>35</td><td>177</td><td>491</td><td>15,085</td><td>277</td></tr>
+    <tr><td>1AML</td><td>40</td><td>202</td><td>561</td><td>19,740</td><td>267</td></tr>
+    <tr><td>1BA4</td><td>40</td><td>202</td><td>561</td><td>19,740</td><td>301</td></tr>
+    <tr><td>1C56</td><td>40</td><td>202</td><td>561</td><td>19,740</td><td>303</td></tr>
+  </tbody>
+</table>
   
 All algorithms were implemented in C and compiled with **GCC 13.3.0** using the `-O3` optimization flag. The experiments were carried out on a system equipped with an **Intel Xeon Silver 4114 CPU** (10 cores, 20 threads, max frequency 3.0 GHz) and **156 GB of RAM**, running **Ubuntu 24.04.3 LTS**.  
 
 Each instance was executed in **single-thread mode**, with up to seven instances running in parallel. The **CPU time limit** for each run was set to **12 hours**.  
 
-The following table presents the consolidated benchmark results for **iBP**, **iABP**, and **iTBP**. It includes the last embedded vertex (**l.e.v.**), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively. The structural quality measures are reported as $\overline{\mathrm{MDE}}$, $\overline{\mathrm{LDE}}$, and $\underline{\mathrm{RMSD}}$.
+These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as $\mathcal{D}_{i,j} = [\underline{d}_{i,j}, \overline{d}_{i,j}]$, centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5\ \text{\AA}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
 
-## $\varepsilon_{\mathrm{short}} = 0.1 \ \mathrm{\AA}$, $\varepsilon_{\mathrm{long}} = 0.5 \ \mathrm{\AA}$
+The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$.
 
-For this case, $|T_i^\pm| = 9$ was used for \textit{i}BP, whereas $|T_i^\pm| = 5$ was used for both \textit{i}ABP and \textit{i}TBP.
+The following tables present the consolidated benchmark results for **iBP**, **iABP**, and **iTBP**. They include the last embedded vertex (**l.e.v.**), CPU time, and the counters $e_a$, $s_a$, and $c_a$, which denote the number of embedded vertices, the number of solutions found, and the number of considered solutions, respectively.
+
+The benchmark tables report the Mean Distance Error (MDE), the Largest Distance Error (LDE), and the Root Mean Square Deviation (RMSD), defined as follows:
+
+$$
+\begin{aligned}
+\Delta_{v_i,v_j}(G,X) &:= \max\big\{0,\ \underline{d}_{i,j} - \|x_i-x_j\|,\ \|x_i-x_j\| - \overline{d}_{i,j}\big\},\\[0.2cm]
+\mathrm{MDE}(G,X) &:= \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),\\[0.2cm]
+\mathrm{LDE}(G,X) &:= \max_{\{v_i,v_j\} \in E} \Big\{\Delta_{v_i,v_j}(G,X)\Big\},\\[0.2cm]
+\mathrm{RMSD}(X,X^*) &:= \dfrac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \|X^*-XQ\|_F.
+\end{aligned}
+$$
+
+Here, $\|\cdot\|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
+
+The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
+
+To assess structural diversity and geometric accuracy, we compute the number of considered solutions $c_a$, defined as the number of realizations whose pairwise RMSD (between solutions) is at least $3\ \text{\AA}$. We also report the maximum MDE ($\overline{\mathrm{MDE}}$), maximum LDE ($\overline{\mathrm{LDE}}$), and the minimum RMSD ($\underline{\mathrm{RMSD}}$) with respect to the reference structure from the original PDB file used to generate the instance, computed over all feasible solutions produced by algorithm $a$.
+
+## $\varepsilon_{\mathrm{short}} = 0.1 \ \AA$, $\varepsilon_{\mathrm{long}} = 0.5 \ \AA$
+
+For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
@@ -327,9 +360,9 @@ For this case, $|T_i^\pm| = 9$ was used for \textit{i}BP, whereas $|T_i^\pm| = 5
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 0.5 \ \mathrm{\AA}$, $\varepsilon_{\mathrm{long}} = 1.0 \ \mathrm{\AA}$
+## $\varepsilon_{\mathrm{short}} = 0.5 \ \AA$, $\varepsilon_{\mathrm{long}} = 1.0 \ \AA$
 
-For this case, $|T_i^\pm| = 9$ was used for \textit{i}BP, whereas $|T_i^\pm| = 5$ was used for both \textit{i}ABP and \textit{i}TBP.
+For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
@@ -564,9 +597,9 @@ For this case, $|T_i^\pm| = 9$ was used for \textit{i}BP, whereas $|T_i^\pm| = 5
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{\AA}$, $\varepsilon_{\mathrm{long}} = 2.0 \ \mathrm{\AA}$
+## $\varepsilon_{\mathrm{short}} = 1.0 \ \AA$, $\varepsilon_{\mathrm{long}} = 2.0 \ \AA$
 
-For this case, $|T_i^\pm| = 13$ was used for \textit{i}BP, whereas $|T_i^\pm| = 5$ was used for both \textit{i}ABP and \textit{i}TBP.
+For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
@@ -610,103 +643,373 @@ For this case, $|T_i^\pm| = 13$ was used for \textit{i}BP, whereas $|T_i^\pm| = 
   </thead>
   <tbody>
     <tr>
+      <td>1TOS</td>
+      <td>52</td>
+      <td>52</td>
+      <td>52</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>7,450,921,612</td>
+      <td>2,558,460,994</td>
+      <td>3,408,644,997</td>
+      <td>594,292,708</td>
+      <td>573,821,503</td>
+      <td>585,513,012</td>
+      <td>3</td>
+      <td>5</td>
+      <td>3</td>
+      <td>0.000025</td>
+      <td>0.000054</td>
+      <td>0.000061</td>
+      <td>0.0078</td>
+      <td>0.0328</td>
+      <td>0.0411</td>
+      <td>1.31</td>
+      <td>1.24</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>1UAO</td>
+      <td>52</td>
+      <td>52</td>
+      <td>52</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>114.47</td>
+      <td>17,508,149,779</td>
+      <td>2,681,367,178</td>
+      <td>20,923,556</td>
+      <td>635,189,944</td>
+      <td>625,241,100</td>
+      <td>1,429,820</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000032</td>
+      <td>0.000060</td>
+      <td>0.000049</td>
+      <td>0.0125</td>
+      <td>0.0463</td>
+      <td>0.0284</td>
+      <td>0.46</td>
+      <td>0.30</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
       <td>1KUW</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>52</td>
+      <td>52</td>
+      <td>52</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,794.01</td>
+      <td>7,844,481,367</td>
+      <td>1,600,341,636</td>
+      <td>110,525,800</td>
+      <td>641,565,019</td>
+      <td>635,689,260</td>
+      <td>25,255,766</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000019</td>
+      <td>0.000046</td>
+      <td>0.000046</td>
+      <td>0.0078</td>
+      <td>0.0350</td>
+      <td>0.0315</td>
+      <td>0.46</td>
+      <td>0.49</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>1ID6</td>
+      <td>77</td>
+      <td>77</td>
+      <td>77</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>3,473,227,467</td>
+      <td>1,427,190,748</td>
+      <td>1,874,125,016</td>
+      <td>405,833,277</td>
+      <td>406,781,137</td>
+      <td>389,740,860</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000026</td>
+      <td>0.000025</td>
+      <td>0.000026</td>
+      <td>0.0110</td>
+      <td>0.0386</td>
+      <td>0.0402</td>
+      <td>0.70</td>
+      <td>0.51</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>1DNG</td>
+      <td>77</td>
+      <td>77</td>
+      <td>77</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>3,599,865,390</td>
+      <td>1,511,333,187</td>
+      <td>2,578,407,703</td>
+      <td>406,696,452</td>
+      <td>405,440,290</td>
+      <td>377,010,934</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000015</td>
+      <td>0.000027</td>
+      <td>0.000023</td>
+      <td>0.0077</td>
+      <td>0.0296</td>
+      <td>0.0302</td>
+      <td>0.84</td>
+      <td>0.73</td>
+      <td>0.21</td>
     </tr>
     <tr>
       <td>1O53</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>77</td>
+      <td>77</td>
+      <td>77</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,587,960,232</td>
+      <td>1,107,528,132</td>
+      <td>1,800,390,724</td>
+      <td>412,613,442</td>
+      <td>408,735,648</td>
+      <td>392,526,888</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0.000010</td>
+      <td>0.000017</td>
+      <td>0.000023</td>
+      <td>0.0099</td>
+      <td>0.0102</td>
+      <td>0.0211</td>
+      <td>0.95</td>
+      <td>0.89</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>1DU1</td>
+      <td>102</td>
+      <td>102</td>
+      <td>102</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,257,790,514</td>
+      <td>1,060,362,648</td>
+      <td>2,019,475,063</td>
+      <td>202,058,902</td>
+      <td>250,487,617</td>
+      <td>225,223,502</td>
+      <td>3</td>
+      <td>4</td>
+      <td>6</td>
+      <td>0.000009</td>
+      <td>0.000014</td>
+      <td>0.000015</td>
+      <td>0.0082</td>
+      <td>0.0293</td>
+      <td>0.0326</td>
+      <td>4.13</td>
+      <td>2.54</td>
+      <td>1.53</td>
+    </tr>
+    <tr>
+      <td>1DPK</td>
+      <td>102</td>
+      <td>102</td>
+      <td>102</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,601,131,365</td>
+      <td>677,659,205</td>
+      <td>1,177,552,585</td>
+      <td>272,434,486</td>
+      <td>264,801,886</td>
+      <td>271,937,917</td>
+      <td>3</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0.000012</td>
+      <td>0.000015</td>
+      <td>0.000012</td>
+      <td>0.0084</td>
+      <td>0.0314</td>
+      <td>0.0342</td>
+      <td>1.96</td>
+      <td>1.14</td>
+      <td>0.98</td>
     </tr>
     <tr>
       <td>1HO7</td>
+      <td>102</td>
+      <td>102</td>
+      <td>102</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,244,995,823</td>
+      <td>951,973,672</td>
+      <td>1,914,725,324</td>
+      <td>284,372,358</td>
+      <td>276,568,017</td>
+      <td>265,315,143</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000009</td>
+      <td>0.000016</td>
+      <td>0.000011</td>
+      <td>0.0086</td>
+      <td>0.0329</td>
+      <td>0.0313</td>
+      <td>1.37</td>
+      <td>1.68</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>1CKZ</td>
+      <td>127</td>
+      <td>127</td>
+      <td>127</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,287,202,443</td>
+      <td>979,088,276</td>
+      <td>1,367,336,864</td>
+      <td>204,991,083</td>
+      <td>201,555,737</td>
+      <td>195,028,421</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.000005</td>
+      <td>0.000010</td>
+      <td>0.000007</td>
+      <td>0.0081</td>
+      <td>0.0157</td>
+      <td>0.0149</td>
+      <td>7.92</td>
+      <td>5.83</td>
+      <td>3.42</td>
+    </tr>
+    <tr>
+      <td>1LFC</td>
+      <td>103</td>
+      <td>127</td>
+      <td>127</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>320,960,806,752</td>
+      <td>34,002,313,275</td>
+      <td>21,199,975,683</td>
+      <td>0</td>
+      <td>16</td>
+      <td>35,115,022</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
       <td>---</td>
+      <td>0.000007</td>
+      <td>0.000009</td>
       <td>---</td>
+      <td>0.0159</td>
+      <td>0.0249</td>
       <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>3.36</td>
+      <td>0.82</td>
     </tr>
     <tr>
       <td>1A11</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>127</td>
+      <td>127</td>
+      <td>127</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,370,188,202</td>
+      <td>731,790,271</td>
+      <td>1,101,976,292</td>
+      <td>207,537,022</td>
+      <td>200,785,598</td>
+      <td>199,536,361</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000005</td>
+      <td>0.000011</td>
+      <td>0.000011</td>
+      <td>0.0086</td>
+      <td>0.0330</td>
+      <td>0.0371</td>
+      <td>1.54</td>
+      <td>1.21</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>1HO0</td>
+      <td>152</td>
+      <td>152</td>
+      <td>152</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>1,257,836,986</td>
+      <td>477,613,810</td>
+      <td>1,437,863,507</td>
+      <td>165,762,250</td>
+      <td>147,029,070</td>
+      <td>139,115,028</td>
+      <td>2</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.000004</td>
+      <td>0.000007</td>
+      <td>0.000008</td>
+      <td>0.0078</td>
+      <td>0.0292</td>
+      <td>0.0523</td>
+      <td>8.68</td>
+      <td>7.31</td>
+      <td>5.44</td>
+    </tr>
+    <tr>
+      <td>1MMC</td>
+      <td>95</td>
+      <td>97</td>
+      <td>97</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>385,792,113,312</td>
+      <td>28,243,865,993</td>
+      <td>36,398,676,579</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>---</td>
       <td>---</td>
       <td>---</td>
@@ -719,75 +1022,183 @@ For this case, $|T_i^\pm| = 13$ was used for \textit{i}BP, whereas $|T_i^\pm| = 
     </tr>
     <tr>
       <td>1D0R</td>
+      <td>152</td>
+      <td>152</td>
+      <td>152</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>2,216,492,740</td>
+      <td>533,418,857</td>
+      <td>715,780,421</td>
+      <td>148,437,615</td>
+      <td>147,343,409</td>
+      <td>147,334,111</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.000003</td>
+      <td>0.000008</td>
+      <td>0.000008</td>
+      <td>0.0098</td>
+      <td>0.0380</td>
+      <td>0.0362</td>
+      <td>2.21</td>
+      <td>1.35</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>1ZWD</td>
+      <td>177</td>
+      <td>177</td>
+      <td>177</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>951,782,231</td>
+      <td>365,435,889</td>
+      <td>646,612,578</td>
+      <td>118,433,552</td>
+      <td>113,200,735</td>
+      <td>113,370,595</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.000003</td>
+      <td>0.000004</td>
+      <td>0.000004</td>
+      <td>0.0078</td>
+      <td>0.0172</td>
+      <td>0.0227</td>
+      <td>5.49</td>
+      <td>5.47</td>
+      <td>2.95</td>
+    </tr>
+    <tr>
+      <td>1D1H</td>
+      <td>70</td>
+      <td>70</td>
+      <td>177</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>433,661,571,587</td>
+      <td>39,761,307,444</td>
+      <td>1,276,783,990</td>
+      <td>0</td>
+      <td>0</td>
+      <td>112,882,600</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
       <td>---</td>
       <td>---</td>
+      <td>0.000003</td>
       <td>---</td>
       <td>---</td>
+      <td>0.0124</td>
       <td>---</td>
       <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>0.46</td>
     </tr>
     <tr>
       <td>1SPF</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>177</td>
+      <td>177</td>
+      <td>177</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>4,702,748,492</td>
+      <td>747,520,500</td>
+      <td>4,071,584,111</td>
+      <td>117,575,564</td>
+      <td>107,980,730</td>
+      <td>93,990,718</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.000005</td>
+      <td>0.000005</td>
+      <td>0.000006</td>
+      <td>0.0078</td>
+      <td>0.0312</td>
+      <td>0.0174</td>
+      <td>4.32</td>
+      <td>3.36</td>
+      <td>0.97</td>
     </tr>
     <tr>
       <td>1AML</td>
+      <td>202</td>
+      <td>202</td>
+      <td>202</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>614,961,691</td>
+      <td>337,098,972</td>
+      <td>523,265,953</td>
+      <td>97,746,186</td>
+      <td>94,667,459</td>
+      <td>95,104,496</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.000003</td>
+      <td>0.000004</td>
+      <td>0.000004</td>
+      <td>0.0095</td>
+      <td>0.0291</td>
+      <td>0.0282</td>
+      <td>9.33</td>
+      <td>7.27</td>
+      <td>4.32</td>
+    </tr>
+    <tr>
+      <td>1BA4</td>
+      <td>100</td>
+      <td>100</td>
+      <td>202</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>432,126,906,497</td>
+      <td>26,072,523,150</td>
+      <td>447,085,332</td>
+      <td>0</td>
+      <td>0</td>
+      <td>96,369,735</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
       <td>---</td>
       <td>---</td>
+      <td>0.000003</td>
       <td>---</td>
       <td>---</td>
+      <td>0.0342</td>
       <td>---</td>
       <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td>1.14</td>
+    </tr>
+    <tr>
+      <td>1C56</td>
+      <td>175</td>
+      <td>177</td>
+      <td>178</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>43,200.00</td>
+      <td>289,557,642,742</td>
+      <td>19,914,769,446</td>
+      <td>18,127,818,674</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
       <td>---</td>
       <td>---</td>
       <td>---</td>
@@ -801,9 +1212,9 @@ For this case, $|T_i^\pm| = 13$ was used for \textit{i}BP, whereas $|T_i^\pm| = 
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 1.0 \ \mathrm{\AA}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{\AA}$
+## $\varepsilon_{\mathrm{short}} = 1.0 \ \AA$, $\varepsilon_{\mathrm{long}} = 3.0 \ \AA$
 
-For this case, $|T_i^\pm| = 11$ was used for \textit{i}BP, whereas $|T_i^\pm| = 5$ was used for both \textit{i}ABP and \textit{i}TBP.
+For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was used for both $i$ABP and $i$TBP.
 
 <table>
   <thead>
@@ -1038,9 +1449,9 @@ For this case, $|T_i^\pm| = 11$ was used for \textit{i}BP, whereas $|T_i^\pm| = 
   </tbody>
 </table>
 
-## $\varepsilon_{\mathrm{short}} = 2.0 \ \mathrm{\AA}$, $\varepsilon_{\mathrm{long}} = 3.0 \ \mathrm{\AA}$
+## $\varepsilon_{\mathrm{short}} = 2.0 \ \AA$, $\varepsilon_{\mathrm{long}} = 3.0 \ \AA$
 
-For this case, $|T_i^\pm| = 13$ for \textit{i}BP, $|T_i^\pm| = 9$ for \textit{i}ABP, and $|T_i^\pm| = 7$ for \textit{i}TBP.
+For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i^\pm| = 7$ for $i$TBP.
 
 <table>
   <thead>

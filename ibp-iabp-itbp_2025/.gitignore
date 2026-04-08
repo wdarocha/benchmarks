@@ -21,6 +21,7 @@ Makefile
 # Editor/IDE configs
 .vscode/
 .idea/
+.codex
 *.swp
 *~
 
