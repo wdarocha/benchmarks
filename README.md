@@ -7,7 +7,7 @@ It is designed as a long-term archive to ensure that past experiments remain ava
 
 ## 📂 Current Benchmarks
 
-- **ibp-iabp-itbp_2025/**  
+- **ibp-iabp-itbp_2026/**  
   Benchmarks associated with the article:  
   *"An Angle-Based Algorithmic Framework for the Interval Discretizable Distance Geometry Problem"*  
   ([arXiv:2508.09143](https://arxiv.org/abs/2508.09143))
@@ -29,7 +29,7 @@ Instructions specific to each benchmark are included in the corresponding folder
 ## 📜 License
 
 This repository is licensed under the [MIT License](./LICENSE).  
-© 2025 Wagner Alan Aparecido da Rocha
+© 2026 Wagner Alan Aparecido da Rocha
 
 ---
 
