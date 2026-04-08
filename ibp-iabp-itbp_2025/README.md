@@ -100,7 +100,7 @@ All algorithms were implemented in C and compiled with **GCC 13.3.0** using the 
 
 Each instance was executed in **single-thread mode**, with up to seven instances running in parallel. The **CPU time limit** for each run was set to **12 hours**.  
 
-These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as $\mathcal{D}_{i,j} = (\underline{d}_{i,j}, \overline{d}_{i,j})$, centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5 \ \mathrm{Angstroms}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
+These computational results refer to interval distance constraints with different widths, defined only for hydrogen atom pairs. Each interval is modeled as , centered around the reference distance and clipped by a van der Waals lower bound and by the NMR cutoff of $5 \ \mathrm{Angstroms}$. We distinguish **short-range intervals**, controlled by $\varepsilon_{\mathrm{short}}$, for atom pairs in the same or adjacent residues, and **long-range intervals**, controlled by $\varepsilon_{\mathrm{long}}$, for all other pairs. This separation reflects the fact that local contacts are typically described with smaller uncertainty, while nonlocal contacts require wider intervals.
 
 The five interval settings reported below are **$(0.1, 0.5)$**, **$(0.5, 1.0)$**, **$(1.0, 2.0)$**, **$(1.0, 3.0)$**, and **$(2.0, 3.0)$** in angstroms for $(\varepsilon_{\mathrm{short}}, \varepsilon_{\mathrm{long}})$.
 
@@ -117,7 +117,7 @@ $$
 \end{aligned}
 $$
 
-Here, $|\!| \cdot |\!|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
+Here, $\| \cdot \|_F$ denotes the Frobenius norm and $O(3)$ is the group of $3 \times 3$ orthogonal matrices.
 
 The MDE and LDE metrics evaluate how well the solution satisfies the input instance constraints. On the other hand, RMSD measures the structural similarity between the computed conformation and the reference structure $X^*$.
 
