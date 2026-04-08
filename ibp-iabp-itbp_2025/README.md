@@ -1,4 +1,4 @@
-# Benchmarks: iBP, iABP, and iTBP (2025)
+# Benchmarks: $i$BP, $i$ABP, and $i$TBP (2026)
 
 This folder contains the benchmark datasets and results associated with the article:
 
@@ -143,7 +143,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 <table>
   <thead>
     <tr>
-      <th rowspan="2">pdb_id</th>
+      <th rowspan="2">PDB id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -380,7 +380,7 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 <table>
   <thead>
     <tr>
-      <th rowspan="2">pdb_id</th>
+      <th rowspan="2">PDB id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -617,7 +617,7 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">pdb_id</th>
+      <th rowspan="2">PDB id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -1232,7 +1232,7 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">pdb_id</th>
+      <th rowspan="2">PDB id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
@@ -1469,7 +1469,7 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
 <table>
   <thead>
     <tr>
-      <th rowspan="2">pdb_id</th>
+      <th rowspan="2">PDB id</th>
       <th colspan="3">l.e.v.</th>
       <th colspan="3">CPU time</th>
       <th colspan="3">$e_a$</th>
