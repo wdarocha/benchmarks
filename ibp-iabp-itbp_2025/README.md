@@ -63,36 +63,36 @@ The protein dataset used in these experiments is summarized in the following tab
 <table>
   <thead>
     <tr>
-      <th>PDB id</th>
-      <th>$N_{\mathrm{aa}}$</th>
-      <th>$|V|$</th>
-      <th>$|E_0|$</th>
-      <th>$|E_I|$</th>
-      <th>$|E_H|$</th>
+      <th align="center">PDB id</th>
+      <th align="center">$N_{\mathrm{aa}}$</th>
+      <th align="center">$|V|$</th>
+      <th align="center">$|E_0|$</th>
+      <th align="center">$|E_I|$</th>
+      <th align="center">$|E_H|$</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>1TOS</td><td>10</td><td>52</td><td>141</td><td>1,185</td><td>56</td></tr>
-    <tr><td>1UAO</td><td>10</td><td>52</td><td>141</td><td>1,185</td><td>70</td></tr>
-    <tr><td>1KUW</td><td>10</td><td>52</td><td>141</td><td>1,185</td><td>76</td></tr>
-    <tr><td>1ID6</td><td>15</td><td>77</td><td>211</td><td>2,715</td><td>106</td></tr>
-    <tr><td>1DNG</td><td>15</td><td>77</td><td>211</td><td>2,715</td><td>114</td></tr>
-    <tr><td>1O53</td><td>15</td><td>77</td><td>211</td><td>2,715</td><td>116</td></tr>
-    <tr><td>1DU1</td><td>20</td><td>102</td><td>281</td><td>4,870</td><td>128</td></tr>
-    <tr><td>1DPK</td><td>20</td><td>102</td><td>281</td><td>4,870</td><td>138</td></tr>
-    <tr><td>1HO7</td><td>20</td><td>102</td><td>281</td><td>4,870</td><td>166</td></tr>
-    <tr><td>1CKZ</td><td>25</td><td>127</td><td>351</td><td>7,650</td><td>148</td></tr>
-    <tr><td>1LFC</td><td>25</td><td>127</td><td>351</td><td>7,650</td><td>163</td></tr>
-    <tr><td>1A11</td><td>25</td><td>127</td><td>351</td><td>7,650</td><td>207</td></tr>
-    <tr><td>1HO0</td><td>30</td><td>152</td><td>421</td><td>11,055</td><td>167</td></tr>
-    <tr><td>1MMC</td><td>30</td><td>152</td><td>421</td><td>11,055</td><td>223</td></tr>
-    <tr><td>1D0R</td><td>30</td><td>152</td><td>421</td><td>11,055</td><td>229</td></tr>
-    <tr><td>1ZWD</td><td>35</td><td>177</td><td>491</td><td>15,085</td><td>240</td></tr>
-    <tr><td>1D1H</td><td>35</td><td>177</td><td>491</td><td>15,085</td><td>245</td></tr>
-    <tr><td>1SPF</td><td>35</td><td>177</td><td>491</td><td>15,085</td><td>277</td></tr>
-    <tr><td>1AML</td><td>40</td><td>202</td><td>561</td><td>19,740</td><td>267</td></tr>
-    <tr><td>1BA4</td><td>40</td><td>202</td><td>561</td><td>19,740</td><td>301</td></tr>
-    <tr><td>1C56</td><td>40</td><td>202</td><td>561</td><td>19,740</td><td>303</td></tr>
+    <tr><td align="right">1TOS</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">56</td></tr>
+    <tr><td align="right">1UAO</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">70</td></tr>
+    <tr><td align="right">1KUW</td><td align="right">10</td><td align="right">52</td><td align="right">141</td><td align="right">1,185</td><td align="right">76</td></tr>
+    <tr><td align="right">1ID6</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">106</td></tr>
+    <tr><td align="right">1DNG</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">114</td></tr>
+    <tr><td align="right">1O53</td><td align="right">15</td><td align="right">77</td><td align="right">211</td><td align="right">2,715</td><td align="right">116</td></tr>
+    <tr><td align="right">1DU1</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">128</td></tr>
+    <tr><td align="right">1DPK</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">138</td></tr>
+    <tr><td align="right">1HO7</td><td align="right">20</td><td align="right">102</td><td align="right">281</td><td align="right">4,870</td><td align="right">166</td></tr>
+    <tr><td align="right">1CKZ</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">148</td></tr>
+    <tr><td align="right">1LFC</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">163</td></tr>
+    <tr><td align="right">1A11</td><td align="right">25</td><td align="right">127</td><td align="right">351</td><td align="right">7,650</td><td align="right">207</td></tr>
+    <tr><td align="right">1HO0</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">167</td></tr>
+    <tr><td align="right">1MMC</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">223</td></tr>
+    <tr><td align="right">1D0R</td><td align="right">30</td><td align="right">152</td><td align="right">421</td><td align="right">11,055</td><td align="right">229</td></tr>
+    <tr><td align="right">1ZWD</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">240</td></tr>
+    <tr><td align="right">1D1H</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">245</td></tr>
+    <tr><td align="right">1SPF</td><td align="right">35</td><td align="right">177</td><td align="right">491</td><td align="right">15,085</td><td align="right">277</td></tr>
+    <tr><td align="right">1AML</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">267</td></tr>
+    <tr><td align="right">1BA4</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">301</td></tr>
+    <tr><td align="right">1C56</td><td align="right">40</td><td align="right">202</td><td align="right">561</td><td align="right">19,740</td><td align="right">303</td></tr>
   </tbody>
 </table>
   
@@ -143,232 +143,232 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
-      <th colspan="3">l.e.v.</th>
-      <th colspan="3">CPU time</th>
-      <th colspan="3">$e_a$</th>
-      <th colspan="3">$s_a$</th>
-      <th colspan="3">$c_a$</th>
-      <th colspan="3">$\overline{\mathrm{MDE}}$</th>
-      <th colspan="3">$\overline{\mathrm{LDE}}$</th>
-      <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
+      <th align="center" rowspan="2">PDB id</th>
+      <th align="center" colspan="3">l.e.v.</th>
+      <th align="center" colspan="3">CPU time</th>
+      <th align="center" colspan="3">$e_a$</th>
+      <th align="center" colspan="3">$s_a$</th>
+      <th align="center" colspan="3">$c_a$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{MDE}}$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{LDE}}$</th>
+      <th align="center" colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1KUW</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>563.73</td>
-      <td>4,049.70</td>
-      <td>0.06</td>
-      <td>766,075,317</td>
-      <td>571,495,331</td>
-      <td>12,271</td>
-      <td>32,145,764</td>
-      <td>185,680,481</td>
-      <td>1,807</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000019</td>
-      <td>0.000048</td>
-      <td>0.000008</td>
-      <td>0.0072</td>
-      <td>0.0482</td>
-      <td>0.0076</td>
-      <td>0.05</td>
-      <td>0.04</td>
-      <td>0.06</td>
+      <td align="right">1KUW</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">563.73</td>
+      <td align="right">4,049.70</td>
+      <td align="right">0.06</td>
+      <td align="right">766,075,317</td>
+      <td align="right">571,495,331</td>
+      <td align="right">12,271</td>
+      <td align="right">32,145,764</td>
+      <td align="right">185,680,481</td>
+      <td align="right">1,807</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000019</td>
+      <td align="right">0.000048</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.0072</td>
+      <td align="right">0.0482</td>
+      <td align="right">0.0076</td>
+      <td align="right">0.05</td>
+      <td align="right">0.04</td>
+      <td align="right">0.06</td>
     </tr>
     <tr>
-      <td>1O53</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>454.60</td>
-      <td>16,688,035,199</td>
-      <td>2,503,318,882</td>
-      <td>39,686,734</td>
-      <td>1,264,360,014</td>
-      <td>887,619,974</td>
-      <td>9,731,826</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000018</td>
-      <td>0.000020</td>
-      <td>0.000018</td>
-      <td>0.0124</td>
-      <td>0.0202</td>
-      <td>0.0237</td>
-      <td>0.09</td>
-      <td>0.12</td>
-      <td>0.06</td>
+      <td align="right">1O53</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">454.60</td>
+      <td align="right">16,688,035,199</td>
+      <td align="right">2,503,318,882</td>
+      <td align="right">39,686,734</td>
+      <td align="right">1,264,360,014</td>
+      <td align="right">887,619,974</td>
+      <td align="right">9,731,826</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000018</td>
+      <td align="right">0.000020</td>
+      <td align="right">0.000018</td>
+      <td align="right">0.0124</td>
+      <td align="right">0.0202</td>
+      <td align="right">0.0237</td>
+      <td align="right">0.09</td>
+      <td align="right">0.12</td>
+      <td align="right">0.06</td>
     </tr>
     <tr>
-      <td>1HO7</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>23,204.50</td>
-      <td>4,565,797,167</td>
-      <td>2,267,418,854</td>
-      <td>1,484,314,405</td>
-      <td>887,387,441</td>
-      <td>768,433,497</td>
-      <td>459,764,028</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000008</td>
-      <td>0.000016</td>
-      <td>0.000016</td>
-      <td>0.0069</td>
-      <td>0.0279</td>
-      <td>0.0279</td>
-      <td>0.12</td>
-      <td>0.10</td>
-      <td>0.08</td>
+      <td align="right">1HO7</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">23,204.50</td>
+      <td align="right">4,565,797,167</td>
+      <td align="right">2,267,418,854</td>
+      <td align="right">1,484,314,405</td>
+      <td align="right">887,387,441</td>
+      <td align="right">768,433,497</td>
+      <td align="right">459,764,028</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.000016</td>
+      <td align="right">0.000016</td>
+      <td align="right">0.0069</td>
+      <td align="right">0.0279</td>
+      <td align="right">0.0279</td>
+      <td align="right">0.12</td>
+      <td align="right">0.10</td>
+      <td align="right">0.08</td>
     </tr>
     <tr>
-      <td>1A11</td>
-      <td>127</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,420,781,632</td>
-      <td>1,828,755,919</td>
-      <td>2,246,870,049</td>
-      <td>652,102,452</td>
-      <td>512,170,012</td>
-      <td>571,971,176</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000005</td>
-      <td>0.000012</td>
-      <td>0.000013</td>
-      <td>0.0064</td>
-      <td>0.0255</td>
-      <td>0.0248</td>
-      <td>0.24</td>
-      <td>0.30</td>
-      <td>0.11</td>
+      <td align="right">1A11</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,420,781,632</td>
+      <td align="right">1,828,755,919</td>
+      <td align="right">2,246,870,049</td>
+      <td align="right">652,102,452</td>
+      <td align="right">512,170,012</td>
+      <td align="right">571,971,176</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000012</td>
+      <td align="right">0.000013</td>
+      <td align="right">0.0064</td>
+      <td align="right">0.0255</td>
+      <td align="right">0.0248</td>
+      <td align="right">0.24</td>
+      <td align="right">0.30</td>
+      <td align="right">0.11</td>
     </tr>
     <tr>
-      <td>1D0R</td>
-      <td>152</td>
-      <td>152</td>
-      <td>152</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>2,054,793,621</td>
-      <td>1,216,615,135</td>
-      <td>1,557,579,612</td>
-      <td>418,463,717</td>
-      <td>467,296,010</td>
-      <td>380,209,748</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000006</td>
-      <td>0.000005</td>
-      <td>0.000006</td>
-      <td>0.0093</td>
-      <td>0.0181</td>
-      <td>0.0153</td>
-      <td>0.51</td>
-      <td>0.50</td>
-      <td>0.13</td>
+      <td align="right">1D0R</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">2,054,793,621</td>
+      <td align="right">1,216,615,135</td>
+      <td align="right">1,557,579,612</td>
+      <td align="right">418,463,717</td>
+      <td align="right">467,296,010</td>
+      <td align="right">380,209,748</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.0093</td>
+      <td align="right">0.0181</td>
+      <td align="right">0.0153</td>
+      <td align="right">0.51</td>
+      <td align="right">0.50</td>
+      <td align="right">0.13</td>
     </tr>
     <tr>
-      <td>1SPF</td>
-      <td>177</td>
-      <td>177</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>37,043,520,478</td>
-      <td>1,431,710,361</td>
-      <td>2,347,689,855</td>
-      <td>279,361,327</td>
-      <td>224,502,601</td>
-      <td>213,644,137</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000007</td>
-      <td>0.000007</td>
-      <td>0.000007</td>
-      <td>0.0077</td>
-      <td>0.0277</td>
-      <td>0.0272</td>
-      <td>0.68</td>
-      <td>0.65</td>
-      <td>0.35</td>
+      <td align="right">1SPF</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">37,043,520,478</td>
+      <td align="right">1,431,710,361</td>
+      <td align="right">2,347,689,855</td>
+      <td align="right">279,361,327</td>
+      <td align="right">224,502,601</td>
+      <td align="right">213,644,137</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.0077</td>
+      <td align="right">0.0277</td>
+      <td align="right">0.0272</td>
+      <td align="right">0.68</td>
+      <td align="right">0.65</td>
+      <td align="right">0.35</td>
     </tr>
     <tr>
-      <td>1AML</td>
-      <td>202</td>
-      <td>202</td>
-      <td>202</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,703,347,662</td>
-      <td>549,755,324</td>
-      <td>1,121,490,980</td>
-      <td>288,233,592</td>
-      <td>209,158,000</td>
-      <td>240,212,564</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000003</td>
-      <td>0.000004</td>
-      <td>0.000005</td>
-      <td>0.0075</td>
-      <td>0.0245</td>
-      <td>0.0233</td>
-      <td>2.67</td>
-      <td>2.29</td>
-      <td>1.18</td>
+      <td align="right">1AML</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,703,347,662</td>
+      <td align="right">549,755,324</td>
+      <td align="right">1,121,490,980</td>
+      <td align="right">288,233,592</td>
+      <td align="right">209,158,000</td>
+      <td align="right">240,212,564</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.0075</td>
+      <td align="right">0.0245</td>
+      <td align="right">0.0233</td>
+      <td align="right">2.67</td>
+      <td align="right">2.29</td>
+      <td align="right">1.18</td>
     </tr>
   </tbody>
 </table>
@@ -380,232 +380,232 @@ For this case, $|T_i^\pm| = 9$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was u
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
-      <th colspan="3">l.e.v.</th>
-      <th colspan="3">CPU time</th>
-      <th colspan="3">$e_a$</th>
-      <th colspan="3">$s_a$</th>
-      <th colspan="3">$c_a$</th>
-      <th colspan="3">$\overline{\mathrm{MDE}}$</th>
-      <th colspan="3">$\overline{\mathrm{LDE}}$</th>
-      <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
+      <th align="center" rowspan="2">PDB id</th>
+      <th align="center" colspan="3">l.e.v.</th>
+      <th align="center" colspan="3">CPU time</th>
+      <th align="center" colspan="3">$e_a$</th>
+      <th align="center" colspan="3">$s_a$</th>
+      <th align="center" colspan="3">$c_a$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{MDE}}$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{LDE}}$</th>
+      <th align="center" colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1KUW</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>235.63</td>
-      <td>11,287,701,365</td>
-      <td>5,532,058,712</td>
-      <td>36,531,595</td>
-      <td>1,374,916,308</td>
-      <td>2,081,724,821</td>
-      <td>7,146,734</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000016</td>
-      <td>0.000060</td>
-      <td>0.000033</td>
-      <td>0.0082</td>
-      <td>0.0379</td>
-      <td>0.0302</td>
-      <td>0.19</td>
-      <td>0.14</td>
-      <td>0.14</td>
+      <td align="right">1KUW</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">235.63</td>
+      <td align="right">11,287,701,365</td>
+      <td align="right">5,532,058,712</td>
+      <td align="right">36,531,595</td>
+      <td align="right">1,374,916,308</td>
+      <td align="right">2,081,724,821</td>
+      <td align="right">7,146,734</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000016</td>
+      <td align="right">0.000060</td>
+      <td align="right">0.000033</td>
+      <td align="right">0.0082</td>
+      <td align="right">0.0379</td>
+      <td align="right">0.0302</td>
+      <td align="right">0.19</td>
+      <td align="right">0.14</td>
+      <td align="right">0.14</td>
     </tr>
     <tr>
-      <td>1O53</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>4,558,589,488</td>
-      <td>3,377,751,794</td>
-      <td>2,673,632,804</td>
-      <td>910,378,476</td>
-      <td>1,470,253,974</td>
-      <td>881,767,575</td>
-      <td>2</td>
-      <td>2</td>
-      <td>1</td>
-      <td>0.000017</td>
-      <td>0.000025</td>
-      <td>0.000024</td>
-      <td>0.0086</td>
-      <td>0.0150</td>
-      <td>0.0170</td>
-      <td>0.51</td>
-      <td>0.54</td>
-      <td>0.18</td>
+      <td align="right">1O53</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">4,558,589,488</td>
+      <td align="right">3,377,751,794</td>
+      <td align="right">2,673,632,804</td>
+      <td align="right">910,378,476</td>
+      <td align="right">1,470,253,974</td>
+      <td align="right">881,767,575</td>
+      <td align="right">2</td>
+      <td align="right">2</td>
+      <td align="right">1</td>
+      <td align="right">0.000017</td>
+      <td align="right">0.000025</td>
+      <td align="right">0.000024</td>
+      <td align="right">0.0086</td>
+      <td align="right">0.0150</td>
+      <td align="right">0.0170</td>
+      <td align="right">0.51</td>
+      <td align="right">0.54</td>
+      <td align="right">0.18</td>
     </tr>
     <tr>
-      <td>1HO7</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,354,308,363</td>
-      <td>3,039,005,505</td>
-      <td>3,670,135,213</td>
-      <td>736,242,069</td>
-      <td>1,020,268,181</td>
-      <td>712,126,460</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000010</td>
-      <td>0.000013</td>
-      <td>0.000016</td>
-      <td>0.0082</td>
-      <td>0.0320</td>
-      <td>0.0313</td>
-      <td>0.32</td>
-      <td>0.50</td>
-      <td>0.59</td>
+      <td align="right">1HO7</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,354,308,363</td>
+      <td align="right">3,039,005,505</td>
+      <td align="right">3,670,135,213</td>
+      <td align="right">736,242,069</td>
+      <td align="right">1,020,268,181</td>
+      <td align="right">712,126,460</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000013</td>
+      <td align="right">0.000016</td>
+      <td align="right">0.0082</td>
+      <td align="right">0.0320</td>
+      <td align="right">0.0313</td>
+      <td align="right">0.32</td>
+      <td align="right">0.50</td>
+      <td align="right">0.59</td>
     </tr>
     <tr>
-      <td>1A11</td>
-      <td>127</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,193,318,271</td>
-      <td>1,951,480,783</td>
-      <td>2,197,629,608</td>
-      <td>620,122,173</td>
-      <td>618,397,403</td>
-      <td>496,382,244</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000005</td>
-      <td>0.000010</td>
-      <td>0.000009</td>
-      <td>0.0099</td>
-      <td>0.0362</td>
-      <td>0.0351</td>
-      <td>0.81</td>
-      <td>1.00</td>
-      <td>0.39</td>
+      <td align="right">1A11</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,193,318,271</td>
+      <td align="right">1,951,480,783</td>
+      <td align="right">2,197,629,608</td>
+      <td align="right">620,122,173</td>
+      <td align="right">618,397,403</td>
+      <td align="right">496,382,244</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000009</td>
+      <td align="right">0.0099</td>
+      <td align="right">0.0362</td>
+      <td align="right">0.0351</td>
+      <td align="right">0.81</td>
+      <td align="right">1.00</td>
+      <td align="right">0.39</td>
     </tr>
     <tr>
-      <td>1D0R</td>
-      <td>152</td>
-      <td>152</td>
-      <td>152</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>2,196,334,088</td>
-      <td>1,352,780,710</td>
-      <td>1,443,349,943</td>
-      <td>406,121,146</td>
-      <td>451,189,111</td>
-      <td>335,359,084</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000003</td>
-      <td>0.000012</td>
-      <td>0.000008</td>
-      <td>0.0093</td>
-      <td>0.0415</td>
-      <td>0.0358</td>
-      <td>1.49</td>
-      <td>1.59</td>
-      <td>0.52</td>
+      <td align="right">1D0R</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">2,196,334,088</td>
+      <td align="right">1,352,780,710</td>
+      <td align="right">1,443,349,943</td>
+      <td align="right">406,121,146</td>
+      <td align="right">451,189,111</td>
+      <td align="right">335,359,084</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000012</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.0093</td>
+      <td align="right">0.0415</td>
+      <td align="right">0.0358</td>
+      <td align="right">1.49</td>
+      <td align="right">1.59</td>
+      <td align="right">0.52</td>
     </tr>
     <tr>
-      <td>1SPF</td>
-      <td>177</td>
-      <td>177</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>33,476,254,047</td>
-      <td>4,387,457,535</td>
-      <td>18,748,339,985</td>
-      <td>369,569,985</td>
-      <td>400,834,864</td>
-      <td>267,525,138</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0.000004</td>
-      <td>0.000006</td>
-      <td>0.000004</td>
-      <td>0.0085</td>
-      <td>0.0279</td>
-      <td>0.0148</td>
-      <td>1.83</td>
-      <td>2.54</td>
-      <td>0.43</td>
+      <td align="right">1SPF</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">33,476,254,047</td>
+      <td align="right">4,387,457,535</td>
+      <td align="right">18,748,339,985</td>
+      <td align="right">369,569,985</td>
+      <td align="right">400,834,864</td>
+      <td align="right">267,525,138</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.0085</td>
+      <td align="right">0.0279</td>
+      <td align="right">0.0148</td>
+      <td align="right">1.83</td>
+      <td align="right">2.54</td>
+      <td align="right">0.43</td>
     </tr>
     <tr>
-      <td>1AML</td>
-      <td>202</td>
-      <td>202</td>
-      <td>202</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>2,387,110,567</td>
-      <td>671,736,004</td>
-      <td>850,199,837</td>
-      <td>340,825,814</td>
-      <td>214,924,967</td>
-      <td>194,872,383</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0.000002</td>
-      <td>0.000006</td>
-      <td>0.000005</td>
-      <td>0.0079</td>
-      <td>0.0354</td>
-      <td>0.0389</td>
-      <td>5.51</td>
-      <td>5.48</td>
-      <td>3.39</td>
+      <td align="right">1AML</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">2,387,110,567</td>
+      <td align="right">671,736,004</td>
+      <td align="right">850,199,837</td>
+      <td align="right">340,825,814</td>
+      <td align="right">214,924,967</td>
+      <td align="right">194,872,383</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">0.000002</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.0079</td>
+      <td align="right">0.0354</td>
+      <td align="right">0.0389</td>
+      <td align="right">5.51</td>
+      <td align="right">5.48</td>
+      <td align="right">3.39</td>
     </tr>
   </tbody>
 </table>
@@ -617,610 +617,610 @@ For this case, $|T_i^\pm| = 13$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
-      <th colspan="3">l.e.v.</th>
-      <th colspan="3">CPU time</th>
-      <th colspan="3">$e_a$</th>
-      <th colspan="3">$s_a$</th>
-      <th colspan="3">$c_a$</th>
-      <th colspan="3">$\overline{\mathrm{MDE}}$</th>
-      <th colspan="3">$\overline{\mathrm{LDE}}$</th>
-      <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
+      <th align="center" rowspan="2">PDB id</th>
+      <th align="center" colspan="3">l.e.v.</th>
+      <th align="center" colspan="3">CPU time</th>
+      <th align="center" colspan="3">$e_a$</th>
+      <th align="center" colspan="3">$s_a$</th>
+      <th align="center" colspan="3">$c_a$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{MDE}}$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{LDE}}$</th>
+      <th align="center" colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1TOS</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>7,450,921,612</td>
-      <td>2,558,460,994</td>
-      <td>3,408,644,997</td>
-      <td>594,292,708</td>
-      <td>573,821,503</td>
-      <td>585,513,012</td>
-      <td>3</td>
-      <td>5</td>
-      <td>3</td>
-      <td>0.000025</td>
-      <td>0.000054</td>
-      <td>0.000061</td>
-      <td>0.0078</td>
-      <td>0.0328</td>
-      <td>0.0411</td>
-      <td>1.31</td>
-      <td>1.24</td>
-      <td>0.18</td>
+      <td align="right">1TOS</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">7,450,921,612</td>
+      <td align="right">2,558,460,994</td>
+      <td align="right">3,408,644,997</td>
+      <td align="right">594,292,708</td>
+      <td align="right">573,821,503</td>
+      <td align="right">585,513,012</td>
+      <td align="right">3</td>
+      <td align="right">5</td>
+      <td align="right">3</td>
+      <td align="right">0.000025</td>
+      <td align="right">0.000054</td>
+      <td align="right">0.000061</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0328</td>
+      <td align="right">0.0411</td>
+      <td align="right">1.31</td>
+      <td align="right">1.24</td>
+      <td align="right">0.18</td>
     </tr>
     <tr>
-      <td>1UAO</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>114.47</td>
-      <td>17,508,149,779</td>
-      <td>2,681,367,178</td>
-      <td>20,923,556</td>
-      <td>635,189,944</td>
-      <td>625,241,100</td>
-      <td>1,429,820</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000032</td>
-      <td>0.000060</td>
-      <td>0.000049</td>
-      <td>0.0125</td>
-      <td>0.0463</td>
-      <td>0.0284</td>
-      <td>0.46</td>
-      <td>0.30</td>
-      <td>0.24</td>
+      <td align="right">1UAO</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">114.47</td>
+      <td align="right">17,508,149,779</td>
+      <td align="right">2,681,367,178</td>
+      <td align="right">20,923,556</td>
+      <td align="right">635,189,944</td>
+      <td align="right">625,241,100</td>
+      <td align="right">1,429,820</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000032</td>
+      <td align="right">0.000060</td>
+      <td align="right">0.000049</td>
+      <td align="right">0.0125</td>
+      <td align="right">0.0463</td>
+      <td align="right">0.0284</td>
+      <td align="right">0.46</td>
+      <td align="right">0.30</td>
+      <td align="right">0.24</td>
     </tr>
     <tr>
-      <td>1KUW</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,794.01</td>
-      <td>7,844,481,367</td>
-      <td>1,600,341,636</td>
-      <td>110,525,800</td>
-      <td>641,565,019</td>
-      <td>635,689,260</td>
-      <td>25,255,766</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000019</td>
-      <td>0.000046</td>
-      <td>0.000046</td>
-      <td>0.0078</td>
-      <td>0.0350</td>
-      <td>0.0315</td>
-      <td>0.46</td>
-      <td>0.49</td>
-      <td>0.18</td>
+      <td align="right">1KUW</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,794.01</td>
+      <td align="right">7,844,481,367</td>
+      <td align="right">1,600,341,636</td>
+      <td align="right">110,525,800</td>
+      <td align="right">641,565,019</td>
+      <td align="right">635,689,260</td>
+      <td align="right">25,255,766</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000019</td>
+      <td align="right">0.000046</td>
+      <td align="right">0.000046</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0350</td>
+      <td align="right">0.0315</td>
+      <td align="right">0.46</td>
+      <td align="right">0.49</td>
+      <td align="right">0.18</td>
     </tr>
     <tr>
-      <td>1ID6</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,473,227,467</td>
-      <td>1,427,190,748</td>
-      <td>1,874,125,016</td>
-      <td>405,833,277</td>
-      <td>406,781,137</td>
-      <td>389,740,860</td>
-      <td>2</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000026</td>
-      <td>0.000025</td>
-      <td>0.000026</td>
-      <td>0.0110</td>
-      <td>0.0386</td>
-      <td>0.0402</td>
-      <td>0.70</td>
-      <td>0.51</td>
-      <td>0.28</td>
+      <td align="right">1ID6</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,473,227,467</td>
+      <td align="right">1,427,190,748</td>
+      <td align="right">1,874,125,016</td>
+      <td align="right">405,833,277</td>
+      <td align="right">406,781,137</td>
+      <td align="right">389,740,860</td>
+      <td align="right">2</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000026</td>
+      <td align="right">0.000025</td>
+      <td align="right">0.000026</td>
+      <td align="right">0.0110</td>
+      <td align="right">0.0386</td>
+      <td align="right">0.0402</td>
+      <td align="right">0.70</td>
+      <td align="right">0.51</td>
+      <td align="right">0.28</td>
     </tr>
     <tr>
-      <td>1DNG</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,599,865,390</td>
-      <td>1,511,333,187</td>
-      <td>2,578,407,703</td>
-      <td>406,696,452</td>
-      <td>405,440,290</td>
-      <td>377,010,934</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000015</td>
-      <td>0.000027</td>
-      <td>0.000023</td>
-      <td>0.0077</td>
-      <td>0.0296</td>
-      <td>0.0302</td>
-      <td>0.84</td>
-      <td>0.73</td>
-      <td>0.21</td>
+      <td align="right">1DNG</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,599,865,390</td>
+      <td align="right">1,511,333,187</td>
+      <td align="right">2,578,407,703</td>
+      <td align="right">406,696,452</td>
+      <td align="right">405,440,290</td>
+      <td align="right">377,010,934</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000015</td>
+      <td align="right">0.000027</td>
+      <td align="right">0.000023</td>
+      <td align="right">0.0077</td>
+      <td align="right">0.0296</td>
+      <td align="right">0.0302</td>
+      <td align="right">0.84</td>
+      <td align="right">0.73</td>
+      <td align="right">0.21</td>
     </tr>
     <tr>
-      <td>1O53</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,587,960,232</td>
-      <td>1,107,528,132</td>
-      <td>1,800,390,724</td>
-      <td>412,613,442</td>
-      <td>408,735,648</td>
-      <td>392,526,888</td>
-      <td>2</td>
-      <td>2</td>
-      <td>2</td>
-      <td>0.000010</td>
-      <td>0.000017</td>
-      <td>0.000023</td>
-      <td>0.0099</td>
-      <td>0.0102</td>
-      <td>0.0211</td>
-      <td>0.95</td>
-      <td>0.89</td>
-      <td>0.44</td>
+      <td align="right">1O53</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,587,960,232</td>
+      <td align="right">1,107,528,132</td>
+      <td align="right">1,800,390,724</td>
+      <td align="right">412,613,442</td>
+      <td align="right">408,735,648</td>
+      <td align="right">392,526,888</td>
+      <td align="right">2</td>
+      <td align="right">2</td>
+      <td align="right">2</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000017</td>
+      <td align="right">0.000023</td>
+      <td align="right">0.0099</td>
+      <td align="right">0.0102</td>
+      <td align="right">0.0211</td>
+      <td align="right">0.95</td>
+      <td align="right">0.89</td>
+      <td align="right">0.44</td>
     </tr>
     <tr>
-      <td>1DU1</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,257,790,514</td>
-      <td>1,060,362,648</td>
-      <td>2,019,475,063</td>
-      <td>202,058,902</td>
-      <td>250,487,617</td>
-      <td>225,223,502</td>
-      <td>3</td>
-      <td>4</td>
-      <td>6</td>
-      <td>0.000009</td>
-      <td>0.000014</td>
-      <td>0.000015</td>
-      <td>0.0082</td>
-      <td>0.0293</td>
-      <td>0.0326</td>
-      <td>4.13</td>
-      <td>2.54</td>
-      <td>1.53</td>
+      <td align="right">1DU1</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,257,790,514</td>
+      <td align="right">1,060,362,648</td>
+      <td align="right">2,019,475,063</td>
+      <td align="right">202,058,902</td>
+      <td align="right">250,487,617</td>
+      <td align="right">225,223,502</td>
+      <td align="right">3</td>
+      <td align="right">4</td>
+      <td align="right">6</td>
+      <td align="right">0.000009</td>
+      <td align="right">0.000014</td>
+      <td align="right">0.000015</td>
+      <td align="right">0.0082</td>
+      <td align="right">0.0293</td>
+      <td align="right">0.0326</td>
+      <td align="right">4.13</td>
+      <td align="right">2.54</td>
+      <td align="right">1.53</td>
     </tr>
     <tr>
-      <td>1DPK</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,601,131,365</td>
-      <td>677,659,205</td>
-      <td>1,177,552,585</td>
-      <td>272,434,486</td>
-      <td>264,801,886</td>
-      <td>271,937,917</td>
-      <td>3</td>
-      <td>4</td>
-      <td>3</td>
-      <td>0.000012</td>
-      <td>0.000015</td>
-      <td>0.000012</td>
-      <td>0.0084</td>
-      <td>0.0314</td>
-      <td>0.0342</td>
-      <td>1.96</td>
-      <td>1.14</td>
-      <td>0.98</td>
+      <td align="right">1DPK</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,601,131,365</td>
+      <td align="right">677,659,205</td>
+      <td align="right">1,177,552,585</td>
+      <td align="right">272,434,486</td>
+      <td align="right">264,801,886</td>
+      <td align="right">271,937,917</td>
+      <td align="right">3</td>
+      <td align="right">4</td>
+      <td align="right">3</td>
+      <td align="right">0.000012</td>
+      <td align="right">0.000015</td>
+      <td align="right">0.000012</td>
+      <td align="right">0.0084</td>
+      <td align="right">0.0314</td>
+      <td align="right">0.0342</td>
+      <td align="right">1.96</td>
+      <td align="right">1.14</td>
+      <td align="right">0.98</td>
     </tr>
     <tr>
-      <td>1HO7</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,244,995,823</td>
-      <td>951,973,672</td>
-      <td>1,914,725,324</td>
-      <td>284,372,358</td>
-      <td>276,568,017</td>
-      <td>265,315,143</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000009</td>
-      <td>0.000016</td>
-      <td>0.000011</td>
-      <td>0.0086</td>
-      <td>0.0329</td>
-      <td>0.0313</td>
-      <td>1.37</td>
-      <td>1.68</td>
-      <td>0.78</td>
+      <td align="right">1HO7</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,244,995,823</td>
+      <td align="right">951,973,672</td>
+      <td align="right">1,914,725,324</td>
+      <td align="right">284,372,358</td>
+      <td align="right">276,568,017</td>
+      <td align="right">265,315,143</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000009</td>
+      <td align="right">0.000016</td>
+      <td align="right">0.000011</td>
+      <td align="right">0.0086</td>
+      <td align="right">0.0329</td>
+      <td align="right">0.0313</td>
+      <td align="right">1.37</td>
+      <td align="right">1.68</td>
+      <td align="right">0.78</td>
     </tr>
     <tr>
-      <td>1CKZ</td>
-      <td>127</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,287,202,443</td>
-      <td>979,088,276</td>
-      <td>1,367,336,864</td>
-      <td>204,991,083</td>
-      <td>201,555,737</td>
-      <td>195,028,421</td>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>0.000005</td>
-      <td>0.000010</td>
-      <td>0.000007</td>
-      <td>0.0081</td>
-      <td>0.0157</td>
-      <td>0.0149</td>
-      <td>7.92</td>
-      <td>5.83</td>
-      <td>3.42</td>
+      <td align="right">1CKZ</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,287,202,443</td>
+      <td align="right">979,088,276</td>
+      <td align="right">1,367,336,864</td>
+      <td align="right">204,991,083</td>
+      <td align="right">201,555,737</td>
+      <td align="right">195,028,421</td>
+      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">3</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.0081</td>
+      <td align="right">0.0157</td>
+      <td align="right">0.0149</td>
+      <td align="right">7.92</td>
+      <td align="right">5.83</td>
+      <td align="right">3.42</td>
     </tr>
     <tr>
-      <td>1LFC</td>
-      <td>103</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>320,960,806,752</td>
-      <td>34,002,313,275</td>
-      <td>21,199,975,683</td>
-      <td>0</td>
-      <td>16</td>
-      <td>35,115,022</td>
-      <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>---</td>
-      <td>0.000007</td>
-      <td>0.000009</td>
-      <td>---</td>
-      <td>0.0159</td>
-      <td>0.0249</td>
-      <td>---</td>
-      <td>3.36</td>
-      <td>0.82</td>
+      <td align="right">1LFC</td>
+      <td align="right">103</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">320,960,806,752</td>
+      <td align="right">34,002,313,275</td>
+      <td align="right">21,199,975,683</td>
+      <td align="right">0</td>
+      <td align="right">16</td>
+      <td align="right">35,115,022</td>
+      <td align="right">0</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">---</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.000009</td>
+      <td align="right">---</td>
+      <td align="right">0.0159</td>
+      <td align="right">0.0249</td>
+      <td align="right">---</td>
+      <td align="right">3.36</td>
+      <td align="right">0.82</td>
     </tr>
     <tr>
-      <td>1A11</td>
-      <td>127</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,370,188,202</td>
-      <td>731,790,271</td>
-      <td>1,101,976,292</td>
-      <td>207,537,022</td>
-      <td>200,785,598</td>
-      <td>199,536,361</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000005</td>
-      <td>0.000011</td>
-      <td>0.000011</td>
-      <td>0.0086</td>
-      <td>0.0330</td>
-      <td>0.0371</td>
-      <td>1.54</td>
-      <td>1.21</td>
-      <td>0.81</td>
+      <td align="right">1A11</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,370,188,202</td>
+      <td align="right">731,790,271</td>
+      <td align="right">1,101,976,292</td>
+      <td align="right">207,537,022</td>
+      <td align="right">200,785,598</td>
+      <td align="right">199,536,361</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000011</td>
+      <td align="right">0.000011</td>
+      <td align="right">0.0086</td>
+      <td align="right">0.0330</td>
+      <td align="right">0.0371</td>
+      <td align="right">1.54</td>
+      <td align="right">1.21</td>
+      <td align="right">0.81</td>
     </tr>
     <tr>
-      <td>1HO0</td>
-      <td>152</td>
-      <td>152</td>
-      <td>152</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>1,257,836,986</td>
-      <td>477,613,810</td>
-      <td>1,437,863,507</td>
-      <td>165,762,250</td>
-      <td>147,029,070</td>
-      <td>139,115,028</td>
-      <td>2</td>
-      <td>4</td>
-      <td>4</td>
-      <td>0.000004</td>
-      <td>0.000007</td>
-      <td>0.000008</td>
-      <td>0.0078</td>
-      <td>0.0292</td>
-      <td>0.0523</td>
-      <td>8.68</td>
-      <td>7.31</td>
-      <td>5.44</td>
+      <td align="right">1HO0</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">1,257,836,986</td>
+      <td align="right">477,613,810</td>
+      <td align="right">1,437,863,507</td>
+      <td align="right">165,762,250</td>
+      <td align="right">147,029,070</td>
+      <td align="right">139,115,028</td>
+      <td align="right">2</td>
+      <td align="right">4</td>
+      <td align="right">4</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0292</td>
+      <td align="right">0.0523</td>
+      <td align="right">8.68</td>
+      <td align="right">7.31</td>
+      <td align="right">5.44</td>
     </tr>
     <tr>
-      <td>1MMC</td>
-      <td>95</td>
-      <td>97</td>
-      <td>97</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>385,792,113,312</td>
-      <td>28,243,865,993</td>
-      <td>36,398,676,579</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td align="right">1MMC</td>
+      <td align="right">95</td>
+      <td align="right">97</td>
+      <td align="right">97</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">385,792,113,312</td>
+      <td align="right">28,243,865,993</td>
+      <td align="right">36,398,676,579</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
     </tr>
     <tr>
-      <td>1D0R</td>
-      <td>152</td>
-      <td>152</td>
-      <td>152</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>2,216,492,740</td>
-      <td>533,418,857</td>
-      <td>715,780,421</td>
-      <td>148,437,615</td>
-      <td>147,343,409</td>
-      <td>147,334,111</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000003</td>
-      <td>0.000008</td>
-      <td>0.000008</td>
-      <td>0.0098</td>
-      <td>0.0380</td>
-      <td>0.0362</td>
-      <td>2.21</td>
-      <td>1.35</td>
-      <td>0.72</td>
+      <td align="right">1D0R</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">2,216,492,740</td>
+      <td align="right">533,418,857</td>
+      <td align="right">715,780,421</td>
+      <td align="right">148,437,615</td>
+      <td align="right">147,343,409</td>
+      <td align="right">147,334,111</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.0098</td>
+      <td align="right">0.0380</td>
+      <td align="right">0.0362</td>
+      <td align="right">2.21</td>
+      <td align="right">1.35</td>
+      <td align="right">0.72</td>
     </tr>
     <tr>
-      <td>1ZWD</td>
-      <td>177</td>
-      <td>177</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>951,782,231</td>
-      <td>365,435,889</td>
-      <td>646,612,578</td>
-      <td>118,433,552</td>
-      <td>113,200,735</td>
-      <td>113,370,595</td>
-      <td>1</td>
-      <td>1</td>
-      <td>3</td>
-      <td>0.000003</td>
-      <td>0.000004</td>
-      <td>0.000004</td>
-      <td>0.0078</td>
-      <td>0.0172</td>
-      <td>0.0227</td>
-      <td>5.49</td>
-      <td>5.47</td>
-      <td>2.95</td>
+      <td align="right">1ZWD</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">951,782,231</td>
+      <td align="right">365,435,889</td>
+      <td align="right">646,612,578</td>
+      <td align="right">118,433,552</td>
+      <td align="right">113,200,735</td>
+      <td align="right">113,370,595</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">3</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0172</td>
+      <td align="right">0.0227</td>
+      <td align="right">5.49</td>
+      <td align="right">5.47</td>
+      <td align="right">2.95</td>
     </tr>
     <tr>
-      <td>1D1H</td>
-      <td>70</td>
-      <td>70</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>433,661,571,587</td>
-      <td>39,761,307,444</td>
-      <td>1,276,783,990</td>
-      <td>0</td>
-      <td>0</td>
-      <td>112,882,600</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>---</td>
-      <td>---</td>
-      <td>0.000003</td>
-      <td>---</td>
-      <td>---</td>
-      <td>0.0124</td>
-      <td>---</td>
-      <td>---</td>
-      <td>0.46</td>
+      <td align="right">1D1H</td>
+      <td align="right">70</td>
+      <td align="right">70</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">433,661,571,587</td>
+      <td align="right">39,761,307,444</td>
+      <td align="right">1,276,783,990</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">112,882,600</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">2</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">0.000003</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">0.0124</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">0.46</td>
     </tr>
     <tr>
-      <td>1SPF</td>
-      <td>177</td>
-      <td>177</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>4,702,748,492</td>
-      <td>747,520,500</td>
-      <td>4,071,584,111</td>
-      <td>117,575,564</td>
-      <td>107,980,730</td>
-      <td>93,990,718</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0.000005</td>
-      <td>0.000005</td>
-      <td>0.000006</td>
-      <td>0.0078</td>
-      <td>0.0312</td>
-      <td>0.0174</td>
-      <td>4.32</td>
-      <td>3.36</td>
-      <td>0.97</td>
+      <td align="right">1SPF</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">4,702,748,492</td>
+      <td align="right">747,520,500</td>
+      <td align="right">4,071,584,111</td>
+      <td align="right">117,575,564</td>
+      <td align="right">107,980,730</td>
+      <td align="right">93,990,718</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0312</td>
+      <td align="right">0.0174</td>
+      <td align="right">4.32</td>
+      <td align="right">3.36</td>
+      <td align="right">0.97</td>
     </tr>
     <tr>
-      <td>1AML</td>
-      <td>202</td>
-      <td>202</td>
-      <td>202</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>614,961,691</td>
-      <td>337,098,972</td>
-      <td>523,265,953</td>
-      <td>97,746,186</td>
-      <td>94,667,459</td>
-      <td>95,104,496</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0.000003</td>
-      <td>0.000004</td>
-      <td>0.000004</td>
-      <td>0.0095</td>
-      <td>0.0291</td>
-      <td>0.0282</td>
-      <td>9.33</td>
-      <td>7.27</td>
-      <td>4.32</td>
+      <td align="right">1AML</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">614,961,691</td>
+      <td align="right">337,098,972</td>
+      <td align="right">523,265,953</td>
+      <td align="right">97,746,186</td>
+      <td align="right">94,667,459</td>
+      <td align="right">95,104,496</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.0095</td>
+      <td align="right">0.0291</td>
+      <td align="right">0.0282</td>
+      <td align="right">9.33</td>
+      <td align="right">7.27</td>
+      <td align="right">4.32</td>
     </tr>
     <tr>
-      <td>1BA4</td>
-      <td>100</td>
-      <td>100</td>
-      <td>202</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>432,126,906,497</td>
-      <td>26,072,523,150</td>
-      <td>447,085,332</td>
-      <td>0</td>
-      <td>0</td>
-      <td>96,369,735</td>
-      <td>0</td>
-      <td>0</td>
-      <td>2</td>
-      <td>---</td>
-      <td>---</td>
-      <td>0.000003</td>
-      <td>---</td>
-      <td>---</td>
-      <td>0.0342</td>
-      <td>---</td>
-      <td>---</td>
-      <td>1.14</td>
+      <td align="right">1BA4</td>
+      <td align="right">100</td>
+      <td align="right">100</td>
+      <td align="right">202</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">432,126,906,497</td>
+      <td align="right">26,072,523,150</td>
+      <td align="right">447,085,332</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">96,369,735</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">2</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">0.000003</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">0.0342</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">1.14</td>
     </tr>
     <tr>
-      <td>1C56</td>
-      <td>175</td>
-      <td>177</td>
-      <td>178</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>289,557,642,742</td>
-      <td>19,914,769,446</td>
-      <td>18,127,818,674</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
-      <td>---</td>
+      <td align="right">1C56</td>
+      <td align="right">175</td>
+      <td align="right">177</td>
+      <td align="right">178</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">289,557,642,742</td>
+      <td align="right">19,914,769,446</td>
+      <td align="right">18,127,818,674</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">0</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
+      <td align="right">---</td>
     </tr>
   </tbody>
 </table>
@@ -1232,232 +1232,232 @@ For this case, $|T_i^\pm| = 11$ was used for $i$BP, whereas $|T_i^\pm| = 5$ was 
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
-      <th colspan="3">l.e.v.</th>
-      <th colspan="3">CPU time</th>
-      <th colspan="3">$e_a$</th>
-      <th colspan="3">$s_a$</th>
-      <th colspan="3">$c_a$</th>
-      <th colspan="3">$\overline{\mathrm{MDE}}$</th>
-      <th colspan="3">$\overline{\mathrm{LDE}}$</th>
-      <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
+      <th align="center" rowspan="2">PDB id</th>
+      <th align="center" colspan="3">l.e.v.</th>
+      <th align="center" colspan="3">CPU time</th>
+      <th align="center" colspan="3">$e_a$</th>
+      <th align="center" colspan="3">$s_a$</th>
+      <th align="center" colspan="3">$c_a$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{MDE}}$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{LDE}}$</th>
+      <th align="center" colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1KUW</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>484.96</td>
-      <td>15,085,901,811</td>
-      <td>3,341,754,860</td>
-      <td>71,120,093</td>
-      <td>1,108,023,599</td>
-      <td>1,096,647,427</td>
-      <td>14,520,145</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000018</td>
-      <td>0.000053</td>
-      <td>0.000037</td>
-      <td>0.0078</td>
-      <td>0.0427</td>
-      <td>0.0264</td>
-      <td>0.63</td>
-      <td>0.28</td>
-      <td>0.23</td>
+      <td align="right">1KUW</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">484.96</td>
+      <td align="right">15,085,901,811</td>
+      <td align="right">3,341,754,860</td>
+      <td align="right">71,120,093</td>
+      <td align="right">1,108,023,599</td>
+      <td align="right">1,096,647,427</td>
+      <td align="right">14,520,145</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000018</td>
+      <td align="right">0.000053</td>
+      <td align="right">0.000037</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0427</td>
+      <td align="right">0.0264</td>
+      <td align="right">0.63</td>
+      <td align="right">0.28</td>
+      <td align="right">0.23</td>
     </tr>
     <tr>
-      <td>1O53</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>8,119,634,511</td>
-      <td>2,532,741,862</td>
-      <td>3,975,367,133</td>
-      <td>814,659,314</td>
-      <td>798,580,716</td>
-      <td>839,172,820</td>
-      <td>3</td>
-      <td>2</td>
-      <td>4</td>
-      <td>0.000010</td>
-      <td>0.000031</td>
-      <td>0.000032</td>
-      <td>0.0082</td>
-      <td>0.0466</td>
-      <td>0.0465</td>
-      <td>1.34</td>
-      <td>0.90</td>
-      <td>0.34</td>
+      <td align="right">1O53</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">8,119,634,511</td>
+      <td align="right">2,532,741,862</td>
+      <td align="right">3,975,367,133</td>
+      <td align="right">814,659,314</td>
+      <td align="right">798,580,716</td>
+      <td align="right">839,172,820</td>
+      <td align="right">3</td>
+      <td align="right">2</td>
+      <td align="right">4</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000031</td>
+      <td align="right">0.000032</td>
+      <td align="right">0.0082</td>
+      <td align="right">0.0466</td>
+      <td align="right">0.0465</td>
+      <td align="right">1.34</td>
+      <td align="right">0.90</td>
+      <td align="right">0.34</td>
     </tr>
     <tr>
-      <td>1HO7</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>4,346,265,963</td>
-      <td>2,129,612,830</td>
-      <td>5,225,925,858</td>
-      <td>602,189,140</td>
-      <td>428,722,286</td>
-      <td>526,109,862</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000009</td>
-      <td>0.000017</td>
-      <td>0.000014</td>
-      <td>0.0098</td>
-      <td>0.0301</td>
-      <td>0.0305</td>
-      <td>1.79</td>
-      <td>1.59</td>
-      <td>0.86</td>
+      <td align="right">1HO7</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">4,346,265,963</td>
+      <td align="right">2,129,612,830</td>
+      <td align="right">5,225,925,858</td>
+      <td align="right">602,189,140</td>
+      <td align="right">428,722,286</td>
+      <td align="right">526,109,862</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000009</td>
+      <td align="right">0.000017</td>
+      <td align="right">0.000014</td>
+      <td align="right">0.0098</td>
+      <td align="right">0.0301</td>
+      <td align="right">0.0305</td>
+      <td align="right">1.79</td>
+      <td align="right">1.59</td>
+      <td align="right">0.86</td>
     </tr>
     <tr>
-      <td>1A11</td>
-      <td>127</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,094,517,879</td>
-      <td>1,360,697,844</td>
-      <td>1,625,337,036</td>
-      <td>327,408,483</td>
-      <td>373,416,646</td>
-      <td>298,449,639</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000004</td>
-      <td>0.000010</td>
-      <td>0.000010</td>
-      <td>0.0094</td>
-      <td>0.0417</td>
-      <td>0.0419</td>
-      <td>0.70</td>
-      <td>1.22</td>
-      <td>0.88</td>
+      <td align="right">1A11</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,094,517,879</td>
+      <td align="right">1,360,697,844</td>
+      <td align="right">1,625,337,036</td>
+      <td align="right">327,408,483</td>
+      <td align="right">373,416,646</td>
+      <td align="right">298,449,639</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.0094</td>
+      <td align="right">0.0417</td>
+      <td align="right">0.0419</td>
+      <td align="right">0.70</td>
+      <td align="right">1.22</td>
+      <td align="right">0.88</td>
     </tr>
     <tr>
-      <td>1D0R</td>
-      <td>152</td>
-      <td>152</td>
-      <td>152</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>2,022,356,818</td>
-      <td>1,114,845,386</td>
-      <td>1,374,670,093</td>
-      <td>250,559,418</td>
-      <td>274,460,477</td>
-      <td>287,639,348</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000006</td>
-      <td>0.000008</td>
-      <td>0.000010</td>
-      <td>0.0091</td>
-      <td>0.0453</td>
-      <td>0.0393</td>
-      <td>2.10</td>
-      <td>1.59</td>
-      <td>1.31</td>
+      <td align="right">1D0R</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">2,022,356,818</td>
+      <td align="right">1,114,845,386</td>
+      <td align="right">1,374,670,093</td>
+      <td align="right">250,559,418</td>
+      <td align="right">274,460,477</td>
+      <td align="right">287,639,348</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.0091</td>
+      <td align="right">0.0453</td>
+      <td align="right">0.0393</td>
+      <td align="right">2.10</td>
+      <td align="right">1.59</td>
+      <td align="right">1.31</td>
     </tr>
     <tr>
-      <td>1SPF</td>
-      <td>177</td>
-      <td>177</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>8,822,008,603</td>
-      <td>1,196,023,261</td>
-      <td>34,351,253,082</td>
-      <td>209,459,297</td>
-      <td>217,273,281</td>
-      <td>73,737,580</td>
-      <td>1</td>
-      <td>1</td>
-      <td>5</td>
-      <td>0.000003</td>
-      <td>0.000006</td>
-      <td>0.000007</td>
-      <td>0.0076</td>
-      <td>0.0356</td>
-      <td>0.0166</td>
-      <td>2.11</td>
-      <td>4.57</td>
-      <td>0.83</td>
+      <td align="right">1SPF</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">8,822,008,603</td>
+      <td align="right">1,196,023,261</td>
+      <td align="right">34,351,253,082</td>
+      <td align="right">209,459,297</td>
+      <td align="right">217,273,281</td>
+      <td align="right">73,737,580</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">5</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.0076</td>
+      <td align="right">0.0356</td>
+      <td align="right">0.0166</td>
+      <td align="right">2.11</td>
+      <td align="right">4.57</td>
+      <td align="right">0.83</td>
     </tr>
     <tr>
-      <td>1AML</td>
-      <td>202</td>
-      <td>202</td>
-      <td>202</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>2,321,290,868</td>
-      <td>583,215,193</td>
-      <td>1,127,006,040</td>
-      <td>197,011,345</td>
-      <td>158,191,927</td>
-      <td>191,392,611</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000003</td>
-      <td>0.000004</td>
-      <td>0.000004</td>
-      <td>0.0091</td>
-      <td>0.0475</td>
-      <td>0.0486</td>
-      <td>6.95</td>
-      <td>5.88</td>
-      <td>6.42</td>
+      <td align="right">1AML</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">2,321,290,868</td>
+      <td align="right">583,215,193</td>
+      <td align="right">1,127,006,040</td>
+      <td align="right">197,011,345</td>
+      <td align="right">158,191,927</td>
+      <td align="right">191,392,611</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000003</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.0091</td>
+      <td align="right">0.0475</td>
+      <td align="right">0.0486</td>
+      <td align="right">6.95</td>
+      <td align="right">5.88</td>
+      <td align="right">6.42</td>
     </tr>
   </tbody>
 </table>
@@ -1469,232 +1469,232 @@ For this case, $|T_i^\pm| = 13$ for $i$BP, $|T_i^\pm| = 9$ for $i$ABP, and $|T_i
 <table>
   <thead>
     <tr>
-      <th rowspan="2">PDB id</th>
-      <th colspan="3">l.e.v.</th>
-      <th colspan="3">CPU time</th>
-      <th colspan="3">$e_a$</th>
-      <th colspan="3">$s_a$</th>
-      <th colspan="3">$c_a$</th>
-      <th colspan="3">$\overline{\mathrm{MDE}}$</th>
-      <th colspan="3">$\overline{\mathrm{LDE}}$</th>
-      <th colspan="3">$\underline{\mathrm{RMSD}}$</th>
+      <th align="center" rowspan="2">PDB id</th>
+      <th align="center" colspan="3">l.e.v.</th>
+      <th align="center" colspan="3">CPU time</th>
+      <th align="center" colspan="3">$e_a$</th>
+      <th align="center" colspan="3">$s_a$</th>
+      <th align="center" colspan="3">$c_a$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{MDE}}$</th>
+      <th align="center" colspan="3">$\overline{\mathrm{LDE}}$</th>
+      <th align="center" colspan="3">$\underline{\mathrm{RMSD}}$</th>
     </tr>
     <tr>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
-      <th><i>i</i>BP</th>
-      <th><i>i</i>ABP</th>
-      <th><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
+      <th align="center"><i>i</i>BP</th>
+      <th align="center"><i>i</i>ABP</th>
+      <th align="center"><i>i</i>TBP</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>1KUW</td>
-      <td>52</td>
-      <td>52</td>
-      <td>52</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>10,354.74</td>
-      <td>21,976,804,498</td>
-      <td>3,049,768,060</td>
-      <td>932,601,795</td>
-      <td>1,390,520,705</td>
-      <td>1,218,603,305</td>
-      <td>236,296,063</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000025</td>
-      <td>0.000058</td>
-      <td>0.000052</td>
-      <td>0.0085</td>
-      <td>0.0309</td>
-      <td>0.0317</td>
-      <td>0.53</td>
-      <td>0.69</td>
-      <td>0.15</td>
+      <td align="right">1KUW</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">52</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">10,354.74</td>
+      <td align="right">21,976,804,498</td>
+      <td align="right">3,049,768,060</td>
+      <td align="right">932,601,795</td>
+      <td align="right">1,390,520,705</td>
+      <td align="right">1,218,603,305</td>
+      <td align="right">236,296,063</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000025</td>
+      <td align="right">0.000058</td>
+      <td align="right">0.000052</td>
+      <td align="right">0.0085</td>
+      <td align="right">0.0309</td>
+      <td align="right">0.0317</td>
+      <td align="right">0.53</td>
+      <td align="right">0.69</td>
+      <td align="right">0.15</td>
     </tr>
     <tr>
-      <td>1O53</td>
-      <td>77</td>
-      <td>77</td>
-      <td>77</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,266,310,182</td>
-      <td>2,340,760,030</td>
-      <td>3,477,336,773</td>
-      <td>648,534,780</td>
-      <td>979,208,683</td>
-      <td>718,079,299</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>0.000008</td>
-      <td>0.000028</td>
-      <td>0.000017</td>
-      <td>0.0078</td>
-      <td>0.0267</td>
-      <td>0.0233</td>
-      <td>1.33</td>
-      <td>1.46</td>
-      <td>0.64</td>
+      <td align="right">1O53</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">77</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,266,310,182</td>
+      <td align="right">2,340,760,030</td>
+      <td align="right">3,477,336,773</td>
+      <td align="right">648,534,780</td>
+      <td align="right">979,208,683</td>
+      <td align="right">718,079,299</td>
+      <td align="right">2</td>
+      <td align="right">3</td>
+      <td align="right">4</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.000028</td>
+      <td align="right">0.000017</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0267</td>
+      <td align="right">0.0233</td>
+      <td align="right">1.33</td>
+      <td align="right">1.46</td>
+      <td align="right">0.64</td>
     </tr>
     <tr>
-      <td>1HO7</td>
-      <td>102</td>
-      <td>102</td>
-      <td>102</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>4,786,507,757</td>
-      <td>2,914,849,851</td>
-      <td>6,600,498,794</td>
-      <td>433,687,953</td>
-      <td>541,785,666</td>
-      <td>615,748,242</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000009</td>
-      <td>0.000010</td>
-      <td>0.000014</td>
-      <td>0.0075</td>
-      <td>0.0293</td>
-      <td>0.0299</td>
-      <td>1.59</td>
-      <td>1.84</td>
-      <td>1.09</td>
+      <td align="right">1HO7</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">102</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">4,786,507,757</td>
+      <td align="right">2,914,849,851</td>
+      <td align="right">6,600,498,794</td>
+      <td align="right">433,687,953</td>
+      <td align="right">541,785,666</td>
+      <td align="right">615,748,242</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000009</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000014</td>
+      <td align="right">0.0075</td>
+      <td align="right">0.0293</td>
+      <td align="right">0.0299</td>
+      <td align="right">1.59</td>
+      <td align="right">1.84</td>
+      <td align="right">1.09</td>
     </tr>
     <tr>
-      <td>1A11</td>
-      <td>127</td>
-      <td>127</td>
-      <td>127</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>7,609,960,158</td>
-      <td>1,621,674,820</td>
-      <td>1,815,959,499</td>
-      <td>457,540,636</td>
-      <td>402,317,568</td>
-      <td>378,511,078</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000005</td>
-      <td>0.000008</td>
-      <td>0.000011</td>
-      <td>0.0083</td>
-      <td>0.0423</td>
-      <td>0.0399</td>
-      <td>0.99</td>
-      <td>1.01</td>
-      <td>1.46</td>
+      <td align="right">1A11</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">127</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">7,609,960,158</td>
+      <td align="right">1,621,674,820</td>
+      <td align="right">1,815,959,499</td>
+      <td align="right">457,540,636</td>
+      <td align="right">402,317,568</td>
+      <td align="right">378,511,078</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000008</td>
+      <td align="right">0.000011</td>
+      <td align="right">0.0083</td>
+      <td align="right">0.0423</td>
+      <td align="right">0.0399</td>
+      <td align="right">0.99</td>
+      <td align="right">1.01</td>
+      <td align="right">1.46</td>
     </tr>
     <tr>
-      <td>1D0R</td>
-      <td>152</td>
-      <td>152</td>
-      <td>152</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>6,912,514,560</td>
-      <td>9,548,302,561</td>
-      <td>1,218,968,742</td>
-      <td>307,951,609</td>
-      <td>199,296,211</td>
-      <td>285,041,117</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000002</td>
-      <td>0.000010</td>
-      <td>0.000009</td>
-      <td>0.0075</td>
-      <td>0.0443</td>
-      <td>0.0316</td>
-      <td>1.82</td>
-      <td>3.03</td>
-      <td>2.37</td>
+      <td align="right">1D0R</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">152</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">6,912,514,560</td>
+      <td align="right">9,548,302,561</td>
+      <td align="right">1,218,968,742</td>
+      <td align="right">307,951,609</td>
+      <td align="right">199,296,211</td>
+      <td align="right">285,041,117</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000002</td>
+      <td align="right">0.000010</td>
+      <td align="right">0.000009</td>
+      <td align="right">0.0075</td>
+      <td align="right">0.0443</td>
+      <td align="right">0.0316</td>
+      <td align="right">1.82</td>
+      <td align="right">3.03</td>
+      <td align="right">2.37</td>
     </tr>
     <tr>
-      <td>1SPF</td>
-      <td>177</td>
-      <td>177</td>
-      <td>177</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>22,393,410,654</td>
-      <td>1,426,805,788</td>
-      <td>5,991,394,909</td>
-      <td>250,012,600</td>
-      <td>240,388,469</td>
-      <td>177,494,721</td>
-      <td>1</td>
-      <td>1</td>
-      <td>2</td>
-      <td>0.000004</td>
-      <td>0.000006</td>
-      <td>0.000007</td>
-      <td>0.0076</td>
-      <td>0.0315</td>
-      <td>0.0258</td>
-      <td>3.42</td>
-      <td>2.09</td>
-      <td>2.20</td>
+      <td align="right">1SPF</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">177</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">22,393,410,654</td>
+      <td align="right">1,426,805,788</td>
+      <td align="right">5,991,394,909</td>
+      <td align="right">250,012,600</td>
+      <td align="right">240,388,469</td>
+      <td align="right">177,494,721</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">2</td>
+      <td align="right">0.000004</td>
+      <td align="right">0.000006</td>
+      <td align="right">0.000007</td>
+      <td align="right">0.0076</td>
+      <td align="right">0.0315</td>
+      <td align="right">0.0258</td>
+      <td align="right">3.42</td>
+      <td align="right">2.09</td>
+      <td align="right">2.20</td>
     </tr>
     <tr>
-      <td>1AML</td>
-      <td>202</td>
-      <td>202</td>
-      <td>202</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>43,200.00</td>
-      <td>3,378,241,992</td>
-      <td>768,364,829</td>
-      <td>994,693,633</td>
-      <td>190,970,663</td>
-      <td>191,352,677</td>
-      <td>167,670,199</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td>0.000001</td>
-      <td>0.000005</td>
-      <td>0.000005</td>
-      <td>0.0078</td>
-      <td>0.0461</td>
-      <td>0.0672</td>
-      <td>6.76</td>
-      <td>7.71</td>
-      <td>7.07</td>
+      <td align="right">1AML</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">202</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">43,200.00</td>
+      <td align="right">3,378,241,992</td>
+      <td align="right">768,364,829</td>
+      <td align="right">994,693,633</td>
+      <td align="right">190,970,663</td>
+      <td align="right">191,352,677</td>
+      <td align="right">167,670,199</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">1</td>
+      <td align="right">0.000001</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.000005</td>
+      <td align="right">0.0078</td>
+      <td align="right">0.0461</td>
+      <td align="right">0.0672</td>
+      <td align="right">6.76</td>
+      <td align="right">7.71</td>
+      <td align="right">7.07</td>
     </tr>
   </tbody>
 </table>
