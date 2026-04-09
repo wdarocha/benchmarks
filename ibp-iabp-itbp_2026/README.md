@@ -137,10 +137,10 @@ $$
 \Delta_{v_i,v_j}(G,X) = \max\big(0,\ \underline{d}_{i,j} - \lVert x_i-x_j \rVert,\ \lVert x_i-x_j \rVert - \overline{d}_{i,j}\big),
 $$
 $$
-\mathrm{MDE}(G,X) = \dfrac{1}{|E|} \sum_{\{v_i,v_j\} \in E} \Delta_{v_i,v_j}(G,X),
+\mathrm{MDE}(G,X) = \dfrac{1}{|E|} \sum_{(v_i,v_j) \in E} \Delta_{v_i,v_j}(G,X),
 $$
 $$
-\mathrm{LDE}(G,X) = \max_{\{v_i,v_j\} \in E} \Big(\Delta_{v_i,v_j}(G,X)\Big),
+\mathrm{LDE}(G,X) = \max_{(v_i,v_j) \in E} \Big(\Delta_{v_i,v_j}(G,X)\Big),
 $$
 $$
 \mathrm{RMSD}(X,X^*) = \frac{1}{\sqrt{|V|}} \min_{Q \in O(3)} \lVert X^\ast - XQ \rVert_F,
