@@ -1,0 +1,9 @@
+Execution status = success
+CPU time = 43200.44805800
+Last embedded vertex = 102/102
+Number of embedded vertices = 1845454853
+Number of solutions found = 437582505
+Number of considered solutions = 3
+maximum MDE = 0.00000529
+maximum LDE = 0.01770530
+minimum RMSD = 2.51552026
